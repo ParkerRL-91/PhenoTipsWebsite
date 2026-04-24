@@ -1,0 +1,16 @@
+.DS_Store
+.vscode/
+.idea/
+*.log
+node_modules/
+dist/
+.env
+.env.local
+
+# Memory directory (private session memory, not for repo)
+memory/
+
+# Source materials (binary, not for public repo)
+General_Business_Case_Updated.docx
+PhenoTips ROI Calculator v3.xlsx
+Design Reference/PhenoVibes Design System.zip

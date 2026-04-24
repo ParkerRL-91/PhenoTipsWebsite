@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rare Disease — PhenoTips</title>
+  <meta name="description" content="Reach the right diagnosis years sooner. PhenoTips gives rare disease genetics teams structured phenotyping, automated pedigrees, and collaborative research tools.">
+  <meta property="og:title" content="Rare Disease — PhenoTips">
+  <meta property="og:description" content="Reach the right diagnosis years sooner. PhenoTips gives rare disease genetics teams structured phenotyping, automated pedigrees, and collaborative research tools.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../css/design-tokens.css">
+  <link rel="stylesheet" href="../css/site.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="PhenoTips home">
+        <img src="../assets/logo-phenotips-full.png" alt="PhenoTips">
+      </a>
+      <ul class="nav__links" role="list">
+        <li>
+          <a href="#" class="nav__link active" aria-haspopup="true">
+            Solutions <i data-lucide="chevron-down" style="width:14px;height:14px;"></i>
+          </a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="rare-disease.html">Rare Disease</a></li>
+            <li><a href="cancer-genetics.html">Cancer Genetics</a></li>
+            <li><a href="health-systems.html">Health Systems</a></li>
+          </ul>
+        </li>
+        <li><a href="../platform.html" class="nav__link">Platform</a></li>
+        <li><a href="../roi-calculator.html" class="nav__link">ROI Calculator</a></li>
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">Resources <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="../webinars.html">Webinars</a></li>
+            <li><a href="../publications.html">Publications</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">About <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="../about.html">Our Story</a></li>
+            <li><a href="../team.html">The Team</a></li>
+          </ul>
+        </li>
+        <li><a href="../contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="#" class="nav__login">Login</a>
+        <a href="../contact.html" class="btn btn--primary">Book a Demo</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__mobile-menu" aria-label="Mobile navigation">
+      <p class="nav__mobile-section-title">Solutions</p>
+      <ul>
+        <li><a href="rare-disease.html">Rare Disease</a></li>
+        <li><a href="cancer-genetics.html">Cancer Genetics</a></li>
+        <li><a href="health-systems.html">Health Systems</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Product</p>
+      <ul>
+        <li><a href="../platform.html">Platform</a></li>
+        <li><a href="../roi-calculator.html">ROI Calculator</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Resources</p>
+      <ul>
+        <li><a href="../webinars.html">Webinars</a></li>
+        <li><a href="../publications.html">Publications</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Company</p>
+      <ul>
+        <li><a href="../about.html">Our Story</a></li>
+        <li><a href="../team.html">The Team</a></li>
+        <li><a href="../contact.html">Contact / Book a Demo</a></li>
+      </ul>
+    </nav>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Rare Disease</span>
+      <h1>Reach the right diagnosis — <em>years sooner.</em></h1>
+      <p class="lead">The average rare disease patient waits 4 to 7 years and sees 8 specialists before receiving a diagnosis. PhenoTips compresses that odyssey into structured, collaborative, data-driven care.</p>
+      <div class="page-hero__stat-pill">
+        <i data-lucide="zap" style="width:16px;height:16px;color:var(--pheno-400);"></i>
+        <strong>30×</strong> faster to a differential diagnosis
+      </div>
+      <div class="btn-group">
+        <a href="../contact.html" class="btn btn--primary btn--lg">Book a Demo</a>
+        <a href="../platform.html" class="btn btn--secondary btn--lg">Explore the Platform</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE CHALLENGE -->
+  <section class="section">
+    <div class="container">
+      <div class="challenge">
+        <span class="eyebrow">The challenge</span>
+        <h2>The diagnostic odyssey is a data problem.</h2>
+        <p>Phenotype data lives in free-text notes. Pedigrees are redrawn at every visit. Variant findings stay in the lab while the clinical team works in isolation. Without structured, connected data, the right answer takes years — and some patients never get there.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW PHENOTIPS HELPS — 4 OUTCOME BLOCKS -->
+  <section class="section">
+    <div class="container">
+      <div style="margin-bottom:var(--space-8);">
+        <span class="eyebrow">How PhenoTips helps</span>
+        <h2>Four things your team can accomplish — starting day one.</h2>
+      </div>
+
+      <div class="outcome-block">
+        <div class="outcome-block__content">
+          <span class="eyebrow">Structured Phenotyping</span>
+          <h3>Turn clinical notes into structured data — automatically.</h3>
+          <p>PhenoTips concept recognition reads free-text notes and maps findings to Human Phenotype Ontology (HPO) terms. Every symptom is captured, standardized, and searchable — no manual coding required.</p>
+          <div class="outcome-block__accomplishes">
+            <i data-lucide="check-circle" style="width:14px;height:14px;"></i>
+            Standardized phenotype capture across your entire team
+          </div>
+        </div>
+        <div class="outcome-block__visual">
+          <div style="background:var(--bg-1);border-radius:var(--radius-md);border:1px solid var(--border-1);box-shadow:var(--shadow-md);padding:var(--space-5);width:100%;">
+            <p style="font-size:11px;color:var(--fg-4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;">HPO terms captured</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;">
+              <span class="ds-hpo">HP:0001250 Seizures</span>
+              <span class="ds-hpo">HP:0000252 Microcephaly</span>
+              <span class="ds-hpo">HP:0002187 Intellectual disability</span>
+              <span class="ds-hpo">HP:0001263 Global delay</span>
+              <span class="ds-hpo">HP:0000365 Hearing loss</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outcome-block outcome-block--reversed">
+        <div class="outcome-block__content">
+          <span class="eyebrow">Pedigree Maker</span>
+          <h3>Build an inclusive, accurate pedigree in minutes.</h3>
+          <p>PhenoTips supports all family structures — including non-traditional and multi-generational pedigrees. Patients complete a pre-visit questionnaire from home, and PhenoTips auto-draws the family history before the appointment begins.</p>
+          <div class="outcome-block__accomplishes">
+            <i data-lucide="check-circle" style="width:14px;height:14px;"></i>
+            95%+ of users rate PhenoTips the best pedigree software they've used
+          </div>
+        </div>
+        <div class="outcome-block__visual">
+          <div style="background:var(--bg-1);border-radius:var(--radius-md);border:1px solid var(--border-1);box-shadow:var(--shadow-md);padding:var(--space-5);width:100%;text-align:center;">
+            <p style="font-size:11px;color:var(--fg-4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Auto-generated pedigree</p>
+            <!-- Symbolic pedigree diagram using pure CSS/characters -->
+            <div style="display:flex;flex-direction:column;align-items:center;gap:8px;font-size:12px;color:var(--pheno-300);">
+              <div style="display:flex;gap:24px;align-items:center;">
+                <div style="width:20px;height:20px;border:2px solid var(--pheno-400);border-radius:50%;"></div>
+                <div style="width:2px;height:1px;background:var(--pheno-300);"></div>
+                <div style="width:20px;height:20px;border:2px solid var(--pheno-400);"></div>
+              </div>
+              <div style="width:2px;height:16px;background:var(--pheno-200);"></div>
+              <div style="display:flex;gap:32px;">
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+                  <div style="width:16px;height:16px;border:2px solid var(--pheno-400);background:var(--pheno-200);border-radius:50%;"></div>
+                  <span style="color:var(--fg-4);">affected</span>
+                </div>
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+                  <div style="width:16px;height:16px;border:2px solid var(--pheno-300);border-radius:50%;"></div>
+                  <span style="color:var(--fg-4);">unaffected</span>
+                </div>
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+                  <div style="width:16px;height:16px;border:2px solid var(--pheno-300);"></div>
+                  <span style="color:var(--fg-4);">unaffected</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outcome-block">
+        <div class="outcome-block__content">
+          <span class="eyebrow">Diagnostic Insights</span>
+          <h3>Surface gene and diagnosis suggestions from the phenotype.</h3>
+          <p>PhenoTips analyzes the full HPO phenotype profile to suggest differential diagnoses, relevant gene panels, and similar cases — pointing your team toward answers at the start of the workup, not years into it.</p>
+          <div class="outcome-block__accomplishes">
+            <i data-lucide="check-circle" style="width:14px;height:14px;"></i>
+            Reach a differential up to 30× faster
+          </div>
+        </div>
+        <div class="outcome-block__visual">
+          <div style="background:var(--bg-1);border-radius:var(--radius-md);border:1px solid var(--border-1);box-shadow:var(--shadow-md);padding:var(--space-5);width:100%;">
+            <p style="font-size:11px;color:var(--fg-4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;">Top differential suggestions</p>
+            <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="color:var(--fg-1);">CDKL5 Deficiency Disorder</span>
+                <span style="background:var(--pheno-50);color:var(--pheno-700);padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;">94%</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="color:var(--fg-1);">Rett Syndrome</span>
+                <span style="background:var(--pheno-50);color:var(--pheno-700);padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;">87%</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="color:var(--fg-2);">Angelman Syndrome</span>
+                <span style="background:var(--neutral-100);color:var(--fg-3);padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;">61%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outcome-block outcome-block--reversed">
+        <div class="outcome-block__content">
+          <span class="eyebrow">Research Collaboration</span>
+          <h3>Connect de-identified cases to global rare disease cohorts.</h3>
+          <p>PhenoTips integrates with PhenomeCentral, enabling secure de-identified data sharing across institutions — without re-consenting patients. Find similar cases globally. Accelerate discovery for conditions where each program may only see a handful of patients per year.</p>
+          <div class="outcome-block__accomplishes">
+            <i data-lucide="check-circle" style="width:14px;height:14px;"></i>
+            Connect to global rare disease networks without re-consenting
+          </div>
+        </div>
+        <div class="outcome-block__visual">
+          <div style="background:var(--bg-1);border-radius:var(--radius-md);border:1px solid var(--border-1);box-shadow:var(--shadow-md);padding:var(--space-5);width:100%;">
+            <p style="font-size:11px;color:var(--fg-4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px;">PhenomeCentral — cohort matches</p>
+            <div style="display:flex;gap:16px;font-size:13px;">
+              <div style="text-align:center;"><span style="font-size:24px;font-weight:600;color:var(--pheno-600);display:block;">847</span><span style="color:var(--fg-4);font-size:11px;">cases shared</span></div>
+              <div style="text-align:center;"><span style="font-size:24px;font-weight:600;color:var(--pheno-600);display:block;">23</span><span style="color:var(--fg-4);font-size:11px;">institutions</span></div>
+              <div style="text-align:center;"><span style="font-size:24px;font-weight:600;color:var(--pheno-600);display:block;">142</span><span style="color:var(--fg-4);font-size:11px;">matches found</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="section section--wash">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:var(--space-7);">
+        <span class="eyebrow">Trusted by leading programs</span>
+        <h2>What rare disease teams accomplish with PhenoTips.</h2>
+      </div>
+      <div class="grid grid--2" style="max-width:900px;margin:0 auto var(--space-7);">
+        <div class="testimonial">
+          <span class="testimonial__marks">"</span>
+          <p class="testimonial__quote">It would now suggest a differential by visit six — that would have taken far more visits before.</p>
+          <div class="testimonial__attribution">
+            Ian Stedman
+            <span>Clinical Genetics · Hospital for Sick Children (SickKids)</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <span class="testimonial__marks">"</span>
+          <p class="testimonial__quote">PhenoTips has become an indispensable asset to our research team.</p>
+          <div class="testimonial__attribution">
+            Lauren Bartik
+            <span>Research · Children's Mercy Kansas City</span>
+          </div>
+        </div>
+      </div>
+      <div class="proof-bar__logos" style="justify-content:center;">
+        <span class="proof-bar__logo">SickKids</span>
+        <span class="proof-bar__logo">Children's Mercy</span>
+        <span class="proof-bar__logo">Care4Rare Canada</span>
+        <span class="proof-bar__logo">UW-Madison</span>
+        <span class="proof-bar__logo">BC Children's Hospital</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>End the diagnostic odyssey for your patients.</h2>
+      <p>See how PhenoTips fits your rare disease program — from phenotyping to collaborative research.</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="../contact.html" class="btn btn--primary btn--lg">Book a Demo</a>
+        <a href="../platform.html" class="btn btn--ghost btn--lg">Explore the Platform</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="../assets/logo-phenotips-full.png" alt="PhenoTips">
+          <p>The world's first Genomic Health Record. Founded 2011 at BC Children's Hospital.</p>
+        </div>
+        <div class="footer__links-grid">
+          <div class="footer__col">
+            <p class="footer__col-title">Solutions</p>
+            <ul>
+              <li><a href="rare-disease.html">Rare Disease</a></li>
+              <li><a href="cancer-genetics.html">Cancer Genetics</a></li>
+              <li><a href="health-systems.html">Health Systems</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Platform</p>
+            <ul>
+              <li><a href="../platform.html">Platform Overview</a></li>
+              <li><a href="../roi-calculator.html">ROI Calculator</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Resources</p>
+            <ul>
+              <li><a href="../webinars.html">Webinars</a></li>
+              <li><a href="../publications.html">Publications</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Company</p>
+            <ul>
+              <li><a href="../about.html">Our Story</a></li>
+              <li><a href="../team.html">The Team</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__compliance">
+          <span>HIPAA</span><span>|</span><span>GDPR</span><span>|</span>
+          <span>DSPT</span><span>|</span><span>SOC2</span><span>|</span><span>CE+</span>
+        </div>
+        <p class="footer__legal">&copy; 2024 PhenoTips. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

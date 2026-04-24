@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROI Calculator — PhenoTips</title>
+  <meta name="description" content="Calculate the full value PhenoTips delivers: reclaimed clinical capacity, fewer duplicate tests, and a shortened diagnostic odyssey for rare disease patients.">
+  <meta property="og:title" content="ROI Calculator — PhenoTips">
+  <meta property="og:description" content="Calculate the full value PhenoTips delivers: reclaimed clinical capacity, fewer duplicate tests, and a shortened diagnostic odyssey for rare disease patients.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo-phenotips-full.png" alt="PhenoTips">
+      </a>
+      <ul class="nav__links" role="list">
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">
+            Solutions <i data-lucide="chevron-down" style="width:14px;height:14px;"></i>
+          </a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+            <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+            <li><a href="solutions/health-systems.html">Health Systems</a></li>
+          </ul>
+        </li>
+        <li><a href="platform.html" class="nav__link">Platform</a></li>
+        <li><a href="roi-calculator.html" class="nav__link active">ROI Calculator</a></li>
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">Resources <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="webinars.html">Webinars</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">About <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="team.html">The Team</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="#" class="nav__login">Login</a>
+        <a href="contact.html" class="btn btn--primary">Book a Demo</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__mobile-menu">
+      <p class="nav__mobile-section-title">Solutions</p>
+      <ul>
+        <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+        <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+        <li><a href="solutions/health-systems.html">Health Systems</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Product</p>
+      <ul>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="roi-calculator.html">ROI Calculator</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Resources</p>
+      <ul>
+        <li><a href="webinars.html">Webinars</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Company</p>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="team.html">The Team</a></li>
+        <li><a href="contact.html">Contact / Book a Demo</a></li>
+      </ul>
+    </nav>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">ROI Calculator</span>
+      <h1>The full value of <em>a shorter diagnostic path.</em></h1>
+      <p class="lead">PhenoTips delivers value in three ways: reclaimed clinical capacity, reduced diagnostic waste, and a shortened odyssey for the patients who need answers most. Enter your program's numbers below to see all three.</p>
+    </div>
+  </section>
+
+  <!-- CALCULATOR -->
+  <section class="section">
+    <div class="container">
+      <div id="roi-calculator" class="roi-calculator roi-calculator--v2">
+
+        <!-- INPUTS -->
+        <div class="roi-inputs">
+          <h3 style="color:var(--pheno-800);margin-bottom:var(--space-2);">Your program</h3>
+          <p style="font-size:var(--fs-sm);color:var(--fg-3);margin-bottom:var(--space-6);">Set your program's parameters. Results update in real time.</p>
+
+          <div class="roi-field">
+            <label for="roi-patients">
+              New patients per month
+              <span class="roi-field__value" id="val-patients">100</span>
+            </label>
+            <input type="range" id="roi-patients" min="10" max="500" value="100" step="10">
+          </div>
+
+          <div class="roi-field">
+            <label for="roi-time-new">
+              Avg time per new patient encounter (minutes)
+              <span class="roi-field__value" id="val-time-new">60</span>
+            </label>
+            <input type="range" id="roi-time-new" min="20" max="120" value="60" step="5">
+          </div>
+
+          <div class="roi-field">
+            <label for="roi-risk-count">
+              Cancer risk assessments per month
+              <span class="roi-field__value" id="val-risk-count">40</span>
+            </label>
+            <input type="range" id="roi-risk-count" min="0" max="300" value="40" step="5">
+          </div>
+
+          <div class="roi-field">
+            <label for="roi-time-risk">
+              Avg time per risk assessment today (minutes)
+              <span class="roi-field__value" id="val-time-risk">45</span>
+            </label>
+            <input type="range" id="roi-time-risk" min="15" max="90" value="45" step="5">
+          </div>
+
+          <div class="roi-field">
+            <label for="roi-rare-cases">
+              Rare disease / diagnostic odyssey cases per year
+              <span class="roi-field__value" id="val-rare-cases">60</span>
+            </label>
+            <input type="range" id="roi-rare-cases" min="0" max="500" value="60" step="5">
+          </div>
+
+          <div class="roi-field">
+            <label for="roi-test-cost">
+              Avg cost per genetic test ordered ($)
+              <span class="roi-field__value" id="val-test-cost">2,000</span>
+            </label>
+            <input type="range" id="roi-test-cost" min="500" max="8000" value="2000" step="100">
+          </div>
+
+          <div style="background:var(--bg-2);border-radius:var(--radius-md);padding:var(--space-4);margin-top:var(--space-2);">
+            <p style="font-size:var(--fs-xs);color:var(--fg-4);line-height:var(--lh-relaxed);">
+              Model assumptions: 50% efficiency gain on encounters and risk assessments (published PhenoTips outcomes). Genetic counselor loaded cost $85/hr. 15% reduction in duplicate / unnecessary tests from structured HPO phenotyping. Avg downstream savings per rare disease case accelerated: $8,000 (avoided specialist visits, unnecessary testing, shortened time to therapy).
+            </p>
+          </div>
+        </div>
+
+        <!-- OUTPUTS -->
+        <div class="roi-outputs roi-outputs--v2">
+          <div class="roi-total">
+            <p class="roi-total__label">Total estimated annual value</p>
+            <p class="roi-total__number" id="out-total">$0</p>
+          </div>
+
+          <div class="roi-stream">
+            <div class="roi-stream__icon">
+              <i data-lucide="clock" style="width:18px;height:18px;"></i>
+            </div>
+            <div class="roi-stream__content">
+              <p class="roi-stream__eyebrow">Reclaimed clinical capacity</p>
+              <p class="roi-stream__value"><span id="out-hours-year">0</span> hours / year</p>
+              <p class="roi-stream__detail">Enough capacity for <strong id="out-added-patients">0</strong> additional new patient visits — or <strong id="out-staff-savings">$0</strong> in staff time savings.</p>
+            </div>
+          </div>
+
+          <div class="roi-stream">
+            <div class="roi-stream__icon">
+              <i data-lucide="beaker" style="width:18px;height:18px;"></i>
+            </div>
+            <div class="roi-stream__content">
+              <p class="roi-stream__eyebrow">Reduced diagnostic waste</p>
+              <p class="roi-stream__value"><span id="out-waste">$0</span> / year</p>
+              <p class="roi-stream__detail">Structured phenotyping drives better first-time test selection — cutting duplicate orders and re-tests by approximately 15%.</p>
+            </div>
+          </div>
+
+          <div class="roi-stream">
+            <div class="roi-stream__icon">
+              <i data-lucide="timer-reset" style="width:18px;height:18px;"></i>
+            </div>
+            <div class="roi-stream__content">
+              <p class="roi-stream__eyebrow">Shortened diagnostic odyssey</p>
+              <p class="roi-stream__value"><span id="out-odyssey">$0</span> / year</p>
+              <p class="roi-stream__detail">Reaching a differential <strong>30× faster</strong> means <strong id="out-rare-cases">0</strong> patients per year avoid years of unnecessary specialist visits and testing.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY -->
+  <section class="section section--wash">
+    <div class="container container--narrow">
+      <div class="text-center" style="margin-bottom:var(--space-7);">
+        <span class="eyebrow">Methodology</span>
+        <h2>Where your savings come from.</h2>
+        <p class="lead" style="margin:var(--space-4) auto 0;">PhenoTips delivers measurable value across three distinct streams. Each is grounded in published outcomes data and conservative clinical assumptions.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card">
+          <div class="card__icon"><i data-lucide="clock" style="width:22px;height:22px;"></i></div>
+          <h3 style="font-size:var(--fs-lg);">Clinical capacity</h3>
+          <p>50% reduction in first-encounter time (pre-visit questionnaire auto-draws the pedigree). 50% reduction in risk assessment time (one pedigree runs CanRisk, Gail, IBIS, PREMM5, Tyrer-Cuzick). Reclaimed hours serve more patients — or cut staff cost.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon"><i data-lucide="beaker" style="width:22px;height:22px;"></i></div>
+          <h3 style="font-size:var(--fs-lg);">Diagnostic accuracy</h3>
+          <p>Structured HPO phenotyping improves first-time test selection. Teams order the right panel the first time — cutting an estimated 15% of duplicate tests, reflex orders, and follow-up rounds that result from incomplete phenotype data.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon"><i data-lucide="timer-reset" style="width:22px;height:22px;"></i></div>
+          <h3 style="font-size:var(--fs-lg);">Shortened odyssey</h3>
+          <p>Rare disease patients average 4–7 years to diagnosis and 8 specialists. PhenoTips concept recognition + differential suggestions compress that timeline — saving an estimated $8,000 per case in downstream specialist visits, unnecessary testing, and delayed therapy.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:var(--space-8);padding:var(--space-6);background:var(--bg-1);border:1px solid var(--border-1);border-radius:var(--radius-lg);">
+        <span class="eyebrow" style="margin-bottom:var(--space-3);">The uncountable value</span>
+        <h3 style="margin-bottom:var(--space-3);">And the outcomes money cannot measure.</h3>
+        <p>Earlier diagnosis means earlier therapy, earlier family planning, and earlier closure for patients who have spent years searching for answers. Improved accuracy means fewer false leads, less patient anxiety, and more appropriate clinical care. Those outcomes do not appear on a spreadsheet — but they are the reason your program exists.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL ROI CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="eyebrow" style="color:var(--sky-300);">Want the full analysis?</span>
+      <h2>See a detailed business case for your program.</h2>
+      <p>Our team will model your specific program — caseload, staffing, workflows, and downstream clinical outcomes — and build the full case for your administration.</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="contact.html" class="btn btn--primary btn--lg">Book a Demo</a>
+        <a href="platform.html" class="btn btn--ghost btn--lg">Explore the Platform</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo-phenotips-full.png" alt="PhenoTips">
+          <p>The world's first Genomic Health Record. Founded 2011 at BC Children's Hospital.</p>
+        </div>
+        <div class="footer__links-grid">
+          <div class="footer__col">
+            <p class="footer__col-title">Solutions</p>
+            <ul>
+              <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+              <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+              <li><a href="solutions/health-systems.html">Health Systems</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Platform</p>
+            <ul>
+              <li><a href="platform.html">Platform Overview</a></li>
+              <li><a href="roi-calculator.html">ROI Calculator</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Resources</p>
+            <ul>
+              <li><a href="webinars.html">Webinars</a></li>
+              <li><a href="publications.html">Publications</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Company</p>
+            <ul>
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="team.html">The Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__compliance">
+          <span>HIPAA</span><span>|</span><span>GDPR</span><span>|</span>
+          <span>DSPT</span><span>|</span><span>SOC2</span><span>|</span><span>CE+</span>
+        </div>
+        <p class="footer__legal">&copy; 2024 PhenoTips. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

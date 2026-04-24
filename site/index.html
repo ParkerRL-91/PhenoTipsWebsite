@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhenoTips — The Genomic Health Record</title>
+  <meta name="description" content="PhenoTips gives genetics teams a single, EHR-integrated platform to capture phenotypes, draw pedigrees, assess cancer risk, and reach answers faster. Trusted by 100+ institutions worldwide.">
+  <meta property="og:title" content="PhenoTips — The Genomic Health Record">
+  <meta property="og:description" content="Shorten the diagnostic odyssey. One end-to-end genomics platform for rare disease, cancer genetics, and health systems.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="PhenoTips home">
+        <img src="assets/logo-phenotips-full.png" alt="PhenoTips">
+      </a>
+      <ul class="nav__links" role="list">
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">Solutions <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+            <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+            <li><a href="solutions/health-systems.html">Health Systems</a></li>
+          </ul>
+        </li>
+        <li><a href="platform.html" class="nav__link">Platform</a></li>
+        <li><a href="roi-calculator.html" class="nav__link">ROI Calculator</a></li>
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">Resources <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="webinars.html">Webinars</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">About <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="team.html">The Team</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="#" class="nav__login">Login</a>
+        <a href="contact.html" class="btn btn--primary">Book a Demo</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__mobile-menu" aria-label="Mobile navigation">
+      <p class="nav__mobile-section-title">Solutions</p>
+      <ul>
+        <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+        <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+        <li><a href="solutions/health-systems.html">Health Systems</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Product</p>
+      <ul>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="roi-calculator.html">ROI Calculator</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Resources</p>
+      <ul>
+        <li><a href="webinars.html">Webinars</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Company</p>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="team.html">The Team</a></li>
+        <li><a href="contact.html">Contact / Book a Demo</a></li>
+      </ul>
+    </nav>
+  </nav>
+
+  <!-- HERO — split layout, outcomes above the fold -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow">The Genomic Health Record</span>
+          <h1>Shorten the <em>diagnostic odyssey.</em></h1>
+          <p class="lead">PhenoTips gives genetics teams one EHR-integrated platform to capture phenotypes, draw pedigrees, run every risk model, and reach answers — faster.</p>
+
+          <div class="hero__outcomes">
+            <div class="hero__outcome">
+              <span class="hero__outcome-icon"><i data-lucide="zap"></i></span>
+              <span><strong>30×</strong> faster to a differential diagnosis</span>
+            </div>
+            <div class="hero__outcome">
+              <span class="hero__outcome-icon"><i data-lucide="trending-up"></i></span>
+              <span><strong>50%</strong> efficiency gain on first-patient encounters</span>
+            </div>
+            <div class="hero__outcome">
+              <span class="hero__outcome-icon"><i data-lucide="network"></i></span>
+              <span>One record across every site, every team, every specialty</span>
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <a href="contact.html" class="btn btn--primary btn--lg">Book a Demo</a>
+            <a href="platform.html" class="btn btn--secondary btn--lg">See How It Works</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card hero__card--main">
+            <p class="hero__card-label">Cancer risk — one click</p>
+            <div class="hero__card-mock-row"><span>CanRisk V2</span><span class="pct pct--warn">28.4%</span></div>
+            <div class="hero__card-mock-row"><span>Tyrer-Cuzick</span><span class="pct pct--warn">31.2%</span></div>
+            <div class="hero__card-mock-row"><span>PREMM5</span><span class="pct pct--ok">4.1%</span></div>
+            <div class="hero__card-mock-row"><span>Gail Model</span><span class="pct pct--ok">8.7%</span></div>
+          </div>
+
+          <div class="hero__card hero__card--chips">
+            <p class="hero__card-label">HPO phenotyping</p>
+            <div class="hero__chip-stack">
+              <span class="ds-hpo">HP:0001250</span>
+              <span class="ds-hpo">HP:0000252</span>
+              <span class="ds-hpo">HP:0002187</span>
+              <span class="ds-hpo">HP:0001263</span>
+            </div>
+          </div>
+
+          <div class="hero__card hero__card--stat">
+            <span class="num">30×</span>
+            <p class="lbl">faster to a differential</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF BAR — marquee -->
+  <section class="proof-bar">
+    <div class="container">
+      <p class="proof-bar__label">Trusted by genetics programs at 100+ institutions worldwide</p>
+    </div>
+    <div class="proof-marquee">
+      <div class="proof-marquee__track">
+        <span class="brand-logo"><img src="assets/logos/sickkids.svg" alt="SickKids"></span>
+        <span class="brand-logo"><img src="assets/logos/childrens-mercy.svg" alt="Children's Mercy Kansas City"></span>
+        <span class="brand-logo"><img src="assets/logos/chu-sainte-justine.svg" alt="CHU Sainte-Justine"></span>
+        <span class="brand-logo"><img src="assets/logos/bc-childrens.svg" alt="BC Children's Hospital"></span>
+        <span class="brand-logo"><img src="assets/logos/cambridge.svg" alt="Cambridge University Hospitals"></span>
+        <span class="brand-logo"><img src="assets/logos/great-ormond-street.svg" alt="Great Ormond Street Hospital"></span>
+        <span class="brand-logo"><img src="assets/logos/care4rare.svg" alt="Care4Rare Canada"></span>
+        <span class="brand-logo"><img src="assets/logos/uw-madison.svg" alt="University of Wisconsin-Madison"></span>
+        <!-- duplicate for seamless marquee loop -->
+        <span class="brand-logo"><img src="assets/logos/sickkids.svg" alt=""></span>
+        <span class="brand-logo"><img src="assets/logos/childrens-mercy.svg" alt=""></span>
+        <span class="brand-logo"><img src="assets/logos/chu-sainte-justine.svg" alt=""></span>
+        <span class="brand-logo"><img src="assets/logos/bc-childrens.svg" alt=""></span>
+        <span class="brand-logo"><img src="assets/logos/cambridge.svg" alt=""></span>
+        <span class="brand-logo"><img src="assets/logos/great-ormond-street.svg" alt=""></span>
+        <span class="brand-logo"><img src="assets/logos/care4rare.svg" alt=""></span>
+        <span class="brand-logo"><img src="assets/logos/uw-madison.svg" alt=""></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOME PILLARS — expanded detail below fold -->
+  <section class="section section--dots">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">What your team accomplishes</span>
+        <h2>Three outcomes that matter — <em>measurable on day one.</em></h2>
+      </div>
+      <div class="grid grid--3">
+
+        <div class="card card--elevated card--accent reveal">
+          <div class="card__icon"><i data-lucide="search" style="width:24px;height:24px;"></i></div>
+          <h3>Diagnose faster</h3>
+          <p>Capture structured HPO phenotypes, auto-generate pedigrees, and surface differential diagnoses — up to 30× faster than manual workflows.</p>
+        </div>
+
+        <div class="card card--elevated card--accent reveal" style="transition-delay:80ms;">
+          <div class="card__icon"><i data-lucide="copy-check" style="width:24px;height:24px;"></i></div>
+          <h3>Eliminate redundant data entry</h3>
+          <p>Send patients a pre-visit questionnaire. PhenoTips draws their pedigree before they arrive. One record. No re-entry across tools.</p>
+        </div>
+
+        <div class="card card--elevated card--accent reveal" style="transition-delay:160ms;">
+          <div class="card__icon"><i data-lucide="network" style="width:24px;height:24px;"></i></div>
+          <h3>Scale across your network</h3>
+          <p>Connect EPRs, lab hubs, and clinical teams across every site. One platform. One shared view of every patient's genomic health.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS TILES -->
+  <section class="section section--sky">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Solutions by specialty</span>
+        <h2>Choose <em>your path.</em></h2>
+        <p>Purpose-built workflows for the three specialties that define clinical genomics.</p>
+      </div>
+      <div class="solution-tiles reveal">
+
+        <a href="solutions/rare-disease.html" class="solution-tile">
+          <span class="eyebrow">Rare Disease</span>
+          <h3>Reach the right diagnosis — years sooner.</h3>
+          <p>Structured phenotyping, automated pedigrees, and collaborative research tools that compress the diagnostic odyssey.</p>
+          <span class="solution-tile__arrow">→</span>
+        </a>
+
+        <a href="solutions/cancer-genetics.html" class="solution-tile">
+          <span class="eyebrow">Cancer Genetics</span>
+          <h3>Run every risk model. Enter data once.</h3>
+          <p>CanRisk, Gail, Tyrer-Cuzick, PREMM5, and IBIS — all from a single pedigree. Save 30 minutes per patient encounter.</p>
+          <span class="solution-tile__arrow">→</span>
+        </a>
+
+        <a href="solutions/health-systems.html" class="solution-tile">
+          <span class="eyebrow">Health Systems</span>
+          <h3>Unite every genetics team under one record.</h3>
+          <p>Connect EPRs, lab hubs, and clinical teams across trusts and networks. FHIR-native. GDPR and DSPT certified.</p>
+          <span class="solution-tile__arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-bar__grid">
+        <div class="stat-item">
+          <span class="stat-item__number">30×</span>
+          <p class="stat-item__label">faster to a differential diagnosis</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__number">50%</span>
+          <p class="stat-item__label">efficiency gain on first patient encounter</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__number">95%+</span>
+          <p class="stat-item__label">of users prefer PhenoTips for pedigree drawing</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__number">100+</span>
+          <p class="stat-item__label">clinical institutions worldwide</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PLATFORM PREVIEW (TABS) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal" style="text-align:left;max-width:720px;margin-left:0;margin-right:0;">
+        <span class="eyebrow">The platform</span>
+        <h2>One end-to-end workflow. <em>Nothing bolted on.</em></h2>
+        <p class="lead" style="margin-top:var(--space-4);">Every tool a genetics program needs — built into a single, certified platform.</p>
+      </div>
+
+      <div class="feature-tabs">
+        <div class="tab-nav">
+          <button class="tab-btn">Pedigree Maker</button>
+          <button class="tab-btn">HPO Phenotyping</button>
+          <button class="tab-btn">Risk Assessment</button>
+          <button class="tab-btn">EHR Integration</button>
+          <button class="tab-btn">Research Cloud</button>
+        </div>
+
+        <div class="tab-panel">
+          <div class="tab-panel__content">
+            <span class="eyebrow">Pedigree Maker</span>
+            <h3>Build accurate, inclusive pedigrees in minutes.</h3>
+            <p>Inclusive of all family structures. Auto-populated from patient questionnaires. Collaborative, exportable, and embedded in the EHR. Over 95% of users rate it the best pedigree software they've used.</p>
+            <a href="platform.html" class="btn btn--secondary">Explore the platform →</a>
+          </div>
+          <div class="tab-panel__screen">
+            <div class="tab-panel__screen-inner">
+              <div style="display:flex;gap:8px;margin-bottom:12px;">
+                <span class="ds-hpo">HP:0001250</span>
+                <span class="ds-hpo">HP:0002187</span>
+                <span class="ds-hpo">HP:0000252</span>
+              </div>
+              <div style="background:var(--bg-2);border-radius:8px;padding:16px;font-size:13px;color:var(--fg-3);text-align:center;min-height:120px;display:flex;align-items:center;justify-content:center;">
+                <span style="color:var(--pheno-300);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Pedigree diagram preview</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel">
+          <div class="tab-panel__content">
+            <span class="eyebrow">HPO Phenotyping</span>
+            <h3>Capture every finding in a standard language.</h3>
+            <p>Concept recognition reads free-text clinical notes and maps them to Human Phenotype Ontology (HPO) terms automatically. Every phenotype becomes structured, searchable, and comparable across institutions.</p>
+            <a href="platform.html" class="btn btn--secondary">Explore the platform →</a>
+          </div>
+          <div class="tab-panel__screen">
+            <div class="tab-panel__screen-inner">
+              <p style="font-size:12px;color:var(--fg-4);margin-bottom:8px;">Clinical note extract →</p>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;">
+                <span class="ds-hpo">HP:0001250 Seizures</span>
+                <span class="ds-hpo">HP:0000252 Microcephaly</span>
+                <span class="ds-hpo">HP:0002187 Intellectual disability</span>
+                <span class="ds-hpo">HP:0001263 Global delay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel">
+          <div class="tab-panel__content">
+            <span class="eyebrow">Cancer Risk Assessment</span>
+            <h3>Run CanRisk, Gail, IBIS, PREMM5, and Tyrer-Cuzick simultaneously.</h3>
+            <p>All major hereditary cancer risk models calculated from one shared pedigree. No re-entry. Results displayed side-by-side for comparison and documentation. Save approximately 30 minutes per assessment.</p>
+            <a href="platform.html" class="btn btn--secondary">Explore the platform →</a>
+          </div>
+          <div class="tab-panel__screen">
+            <div class="tab-panel__screen-inner">
+              <p style="font-size:11px;color:var(--fg-4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;">Risk models — results</p>
+              <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;">
+                <div style="display:flex;justify-content:space-between;"><span>CanRisk V2</span><span style="color:var(--warn-500);font-weight:600;">28.4%</span></div>
+                <div style="display:flex;justify-content:space-between;"><span>Tyrer-Cuzick</span><span style="color:var(--warn-500);font-weight:600;">31.2%</span></div>
+                <div style="display:flex;justify-content:space-between;"><span>PREMM5</span><span style="color:var(--success-500);font-weight:600;">4.1%</span></div>
+                <div style="display:flex;justify-content:space-between;"><span>Gail Model</span><span style="color:var(--success-500);font-weight:600;">8.7%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel">
+          <div class="tab-panel__content">
+            <span class="eyebrow">EHR Integration · SMART on FHIR</span>
+            <h3>Embedded directly in Epic and Oracle Health.</h3>
+            <p>PhenoTips runs as a SMART on FHIR app inside Epic and Oracle Health (Cerner) — single sign-on, patient context handed in automatically, structured records returned to the EHR. The same FHIR-native interoperability extends to any standards-compliant system.</p>
+            <a href="platform.html" class="btn btn--secondary">Explore the platform →</a>
+          </div>
+          <div class="tab-panel__screen">
+            <div class="tab-panel__screen-inner">
+              <p style="font-size:11px;color:var(--fg-4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;">Certified integrations</p>
+              <div class="logo-grid" style="grid-template-columns:repeat(2,1fr);gap:var(--space-4);">
+                <span class="brand-logo"><img src="assets/logos/epic.svg" alt="Epic"></span>
+                <span class="brand-logo"><img src="assets/logos/oracle-cerner.svg" alt="Oracle Health"></span>
+                <span class="brand-logo"><img src="assets/logos/smart-on-fhir.svg" alt="SMART on FHIR"></span>
+                <span class="brand-logo"><img src="assets/logos/hl7-fhir.svg" alt="HL7 FHIR"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel">
+          <div class="tab-panel__content">
+            <span class="eyebrow">Research Cloud</span>
+            <h3>Share data. Accelerate discovery.</h3>
+            <p>De-identified genomic data storage and multi-institutional collaboration — without re-consenting patients. Connect to PhenomeCentral to find similar cases across the global rare disease community.</p>
+            <a href="platform.html" class="btn btn--secondary">Explore the platform →</a>
+          </div>
+          <div class="tab-panel__screen">
+            <div class="tab-panel__screen-inner">
+              <p style="font-size:12px;color:var(--fg-4);margin-bottom:10px;">Cohort — de-identified patients</p>
+              <div style="display:flex;gap:12px;font-size:13px;">
+                <div style="text-align:center;"><span style="font-size:22px;font-weight:600;color:var(--pheno-600);">847</span><br><span style="color:var(--fg-4);font-size:11px;">cases shared</span></div>
+                <div style="text-align:center;"><span style="font-size:22px;font-weight:600;color:var(--pheno-600);">23</span><br><span style="color:var(--fg-4);font-size:11px;">institutions</span></div>
+                <div style="text-align:center;"><span style="font-size:22px;font-weight:600;color:var(--pheno-600);">142</span><br><span style="color:var(--fg-4);font-size:11px;">matches found</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--wash">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">What clinicians say</span>
+        <h2>Trusted by the teams <em>on the front line.</em></h2>
+      </div>
+      <div class="grid grid--3 reveal">
+
+        <div class="testimonial">
+          <span class="testimonial__marks">"</span>
+          <p class="testimonial__quote">PhenoTips has made it much better than what we had before — for case tracking, for everything.</p>
+          <div class="testimonial__attribution">
+            Anne-Marie Laberge
+            <span>Clinical Genetics · CHU Sainte-Justine</span>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <span class="testimonial__marks">"</span>
+          <p class="testimonial__quote">We save time as we no longer have to re-enter information for cancer risk calculations.</p>
+          <div class="testimonial__attribution">
+            Dr. Ajith Kumar
+            <span>Clinical Genetics · Great Ormond Street Hospital NHS Trust</span>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <span class="testimonial__marks">"</span>
+          <p class="testimonial__quote">PhenoTips has become an indispensable asset to our research team.</p>
+          <div class="testimonial__attribution">
+            Lauren Bartik
+            <span>Research · Children's Mercy Kansas City</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI CALLOUT -->
+  <section class="section">
+    <div class="container">
+      <div style="background:var(--bg-sky-gradient-soft);border:1px solid var(--pheno-100);border-radius:var(--radius-lg);padding:var(--space-8);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-6);">
+        <div>
+          <span class="eyebrow">ROI Calculator</span>
+          <h2 style="max-width:20ch;">Calculate what your program can reclaim.</h2>
+          <p style="max-width:48ch;margin-top:var(--space-4);">Enter your program's numbers and see the hours, capacity, and cost savings a PhenoTips deployment delivers.</p>
+        </div>
+        <a href="roi-calculator.html" class="btn btn--primary btn--lg">Calculate your ROI →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Start shortening the diagnostic odyssey.</h2>
+      <p>Join 100+ institutions using PhenoTips to deliver precision genomic care.</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="contact.html" class="btn btn--primary btn--lg">Book a Demo</a>
+        <a href="platform.html" class="btn btn--ghost btn--lg">Explore the Platform</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo-phenotips-full.png" alt="PhenoTips">
+          <p>The world's first Genomic Health Record. Founded 2011 at BC Children's Hospital.</p>
+        </div>
+        <div class="footer__links-grid">
+          <div class="footer__col">
+            <p class="footer__col-title">Solutions</p>
+            <ul>
+              <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+              <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+              <li><a href="solutions/health-systems.html">Health Systems</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Platform</p>
+            <ul>
+              <li><a href="platform.html">Platform Overview</a></li>
+              <li><a href="roi-calculator.html">ROI Calculator</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Company</p>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html">Book a Demo</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Legal</p>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__compliance">
+          <span>HIPAA</span><span>|</span><span>GDPR</span><span>|</span>
+          <span>DSPT</span><span>|</span><span>SOC2</span><span>|</span><span>CE+</span>
+        </div>
+        <p class="footer__legal">&copy; 2024 PhenoTips. All rights reserved. &nbsp;·&nbsp; <a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Use</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

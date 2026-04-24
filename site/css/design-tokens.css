@@ -1,0 +1,344 @@
+/* ============================================================
+   PhenoTips Design System — Colors & Type
+   ------------------------------------------------------------
+   An evolution of the PhenoTips brand. Keeps the signature
+   deep teal-blue logo color and sky-blue aesthetic, but
+   modernizes the palette into a clinical-minimal system.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  /* ----------------------------------------------------------
+     CORE PALETTE — PhenoTips Blues
+     Signature is a deep teal-leaning blue (logo mark) paired
+     with a soft sky gradient. Extended into a full scale.
+     ---------------------------------------------------------- */
+
+  /* Primary — "PhenoBlue". Sampled from the logo mark. */
+  --pheno-50:  #EEF6FB;   /* wash / section backgrounds */
+  --pheno-100: #D6EAF4;   /* subtle surface */
+  --pheno-200: #A9D3E6;   /* soft accents, borders on blue */
+  --pheno-300: #73B4D3;   /* secondary accents */
+  --pheno-400: #3F91BC;   /* hover, interactive */
+  --pheno-500: #1B6A9C;   /* primary brand / CTA */
+  --pheno-600: #14547F;   /* pressed / emphasized text on light */
+  --pheno-700: #0E4368;   /* logo ink — the signature mark */
+  --pheno-800: #0A3250;   /* deep navy accents */
+  --pheno-900: #05213A;   /* near-ink */
+
+  /* Sky — the soft gradient side of the brand. Used for big
+     gentle surfaces, hero backgrounds, slide washes. */
+  --sky-50:  #F4FBFD;
+  --sky-100: #E4F4F9;
+  --sky-200: #C9E8F1;
+  --sky-300: #A8DBE7;
+  --sky-400: #7ECBDD;   /* gradient bright anchor */
+  --sky-500: #52B7CF;
+
+  /* Neutral — warm-cool grays, tuned to sit next to the blues
+     without going cold. Slightly tinted with blue. */
+  --neutral-0:   #FFFFFF;
+  --neutral-50:  #F7F9FB;
+  --neutral-100: #EEF1F4;
+  --neutral-200: #DCE2E8;
+  --neutral-300: #C3CCD4;
+  --neutral-400: #97A3AD;
+  --neutral-500: #697582;
+  --neutral-600: #4B5662;
+  --neutral-700: #343D47;
+  --neutral-800: #20272F;
+  --neutral-900: #0E1319;
+
+  /* Semantic — clinical use cases. Colors are muted and
+     print-friendly, never saturated alert tones. */
+  --success-50:  #ECF6EF;
+  --success-500: #3A8C5E;   /* calm clinical green */
+  --success-700: #24623F;
+
+  --warn-50:  #FCF5E7;
+  --warn-500: #C78A1E;      /* honey-amber, not neon */
+  --warn-700: #8A5F10;
+
+  --danger-50:  #FBEDEC;
+  --danger-500: #B5382F;    /* brick red, medical context */
+  --danger-700: #7E221A;
+
+  --info-50:  #EEF6FB;
+  --info-500: var(--pheno-500);
+  --info-700: var(--pheno-700);
+
+  /* ----------------------------------------------------------
+     SEMANTIC TOKENS — use these in components, not raw colors.
+     ---------------------------------------------------------- */
+
+  /* Foreground */
+  --fg-1: var(--neutral-900);            /* primary text */
+  --fg-2: var(--neutral-700);            /* body */
+  --fg-3: var(--neutral-500);            /* secondary / meta */
+  --fg-4: var(--neutral-400);            /* tertiary / disabled */
+  --fg-brand: var(--pheno-700);          /* headings in branded contexts */
+  --fg-on-brand: var(--neutral-0);       /* text on pheno-500+ */
+  --fg-link: var(--pheno-500);
+  --fg-link-hover: var(--pheno-600);
+
+  /* Background */
+  --bg-1: var(--neutral-0);              /* primary surface */
+  --bg-2: var(--neutral-50);             /* app background */
+  --bg-3: var(--neutral-100);            /* sunken / alt rows */
+  --bg-wash: var(--pheno-50);            /* branded wash section */
+  --bg-brand: var(--pheno-500);          /* CTA, brand block */
+  --bg-brand-strong: var(--pheno-700);   /* emphasized brand block */
+
+  /* Signature gradient — the soft sky wash used across the
+     brand's hero surfaces and slide backgrounds. */
+  --bg-sky-gradient: linear-gradient(
+    135deg,
+    var(--sky-200) 0%,
+    var(--sky-300) 45%,
+    var(--sky-400) 100%
+  );
+  --bg-sky-gradient-soft: linear-gradient(
+    180deg,
+    var(--sky-100) 0%,
+    var(--sky-200) 100%
+  );
+  --bg-ink-gradient: linear-gradient(
+    135deg,
+    var(--pheno-700) 0%,
+    var(--pheno-900) 100%
+  );
+
+  /* Border */
+  --border-1: var(--neutral-200);        /* default */
+  --border-2: var(--neutral-300);        /* emphasized */
+  --border-brand: var(--pheno-300);
+  --border-focus: var(--pheno-500);
+
+  /* ----------------------------------------------------------
+     TYPOGRAPHY
+     Sans: IBM Plex Sans (modern clinical-technical feel)
+     Serif: IBM Plex Serif (editorial pull-quotes, reports)
+     Mono: IBM Plex Mono (codes, IDs, HPO terms, variants)
+
+     NOTE: original brand uses Arial in PPTX. Substituted to
+     Plex for a more distinctive system. Flag to user.
+     ---------------------------------------------------------- */
+
+  --font-sans:  "IBM Plex Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-serif: "IBM Plex Serif", Georgia, Cambria, "Times New Roman", serif;
+  --font-mono:  "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Type scale — modular, based on 1rem = 16px */
+  --fs-xs:   0.75rem;    /* 12px — micro labels, legal */
+  --fs-sm:   0.875rem;   /* 14px — meta, table cells */
+  --fs-base: 1rem;       /* 16px — body */
+  --fs-md:   1.125rem;   /* 18px — emphasized body */
+  --fs-lg:   1.375rem;   /* 22px — sub-heads */
+  --fs-xl:   1.75rem;    /* 28px — h3 */
+  --fs-2xl:  2.25rem;    /* 36px — h2 */
+  --fs-3xl:  3rem;       /* 48px — h1 */
+  --fs-4xl:  4rem;       /* 64px — display */
+  --fs-5xl:  5.5rem;     /* 88px — hero display */
+
+  /* Weights */
+  --fw-light:    300;
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  /* Line heights */
+  --lh-tight:   1.1;
+  --lh-snug:    1.25;
+  --lh-normal:  1.5;
+  --lh-relaxed: 1.65;
+
+  /* Letter spacing — used for eyebrow labels and display */
+  --ls-eyebrow: 0.14em;   /* ALL CAPS LABELS */
+  --ls-display: -0.02em;  /* tight on big display */
+  --ls-tight:   -0.01em;
+
+  /* ----------------------------------------------------------
+     SPACING — 4px base grid
+     ---------------------------------------------------------- */
+  --space-0:   0;
+  --space-1:   0.25rem;   /* 4 */
+  --space-2:   0.5rem;    /* 8 */
+  --space-3:   0.75rem;   /* 12 */
+  --space-4:   1rem;      /* 16 */
+  --space-5:   1.5rem;    /* 24 */
+  --space-6:   2rem;      /* 32 */
+  --space-7:   3rem;      /* 48 */
+  --space-8:   4rem;      /* 64 */
+  --space-9:   6rem;      /* 96 */
+  --space-10:  8rem;      /* 128 */
+
+  /* ----------------------------------------------------------
+     RADII — gentle, clinical, never pill-shaped except
+     chips and inputs-on-purpose.
+     ---------------------------------------------------------- */
+  --radius-xs:  2px;
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-xl:  16px;
+  --radius-2xl: 24px;
+  --radius-pill: 9999px;
+
+  /* ----------------------------------------------------------
+     SHADOWS — soft, diffuse, never dramatic. Mirrors a
+     clinical product aesthetic: credible and quiet.
+     ---------------------------------------------------------- */
+  --shadow-xs: 0 1px 1px rgba(14, 67, 104, 0.04);
+  --shadow-sm: 0 1px 2px rgba(14, 67, 104, 0.06),
+               0 1px 3px rgba(14, 67, 104, 0.04);
+  --shadow-md: 0 4px 8px rgba(14, 67, 104, 0.06),
+               0 2px 4px rgba(14, 67, 104, 0.04);
+  --shadow-lg: 0 10px 24px rgba(14, 67, 104, 0.08),
+               0 4px 8px rgba(14, 67, 104, 0.04);
+  --shadow-xl: 0 20px 48px rgba(14, 67, 104, 0.12),
+               0 8px 16px rgba(14, 67, 104, 0.06);
+  --shadow-focus: 0 0 0 3px rgba(27, 106, 156, 0.28);
+
+  /* ----------------------------------------------------------
+     MOTION
+     ---------------------------------------------------------- */
+  --ease-out:   cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in:    cubic-bezier(0.4, 0, 1, 1);
+  --ease-inout: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast:   120ms;
+  --dur-base:   200ms;
+  --dur-slow:   360ms;
+}
+
+/* ==============================================================
+   SEMANTIC TYPE STYLES — use these classes or read their rules.
+   ============================================================== */
+
+.ds-display {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-5xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-display);
+  color: var(--fg-brand);
+}
+
+.ds-h1 {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-3xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-display);
+  color: var(--fg-1);
+  text-wrap: balance;
+}
+
+.ds-h2 {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-tight);
+  color: var(--fg-1);
+  text-wrap: balance;
+}
+
+.ds-h3 {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-xl);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+  text-wrap: balance;
+}
+
+.ds-h4 {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-lg);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+}
+
+.ds-body {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-2);
+  text-wrap: pretty;
+}
+
+.ds-body-lg {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-md);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-2);
+}
+
+.ds-small {
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-normal);
+  color: var(--fg-3);
+}
+
+.ds-eyebrow {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-xs);
+  line-height: var(--lh-normal);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--fg-brand);
+}
+
+.ds-quote {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-xl);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+  font-style: italic;
+}
+
+.ds-mono {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  color: var(--fg-2);
+}
+
+.ds-hpo {
+  /* Human Phenotype Ontology term chip — core product motif */
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.02em;
+  color: var(--pheno-700);
+  background: var(--pheno-50);
+  border: 1px solid var(--pheno-200);
+  border-radius: var(--radius-sm);
+  padding: 2px 6px;
+}
+
+/* Global element defaults (optional) — apply to body if you
+   want baseline typography without class wrappers. */
+.ds-reset {
+  font-family: var(--font-sans);
+  color: var(--fg-2);
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ds-reset h1 { all: revert; }
+.ds-reset h1 { font: var(--fw-semibold) var(--fs-3xl)/var(--lh-tight) var(--font-sans); color: var(--fg-1); letter-spacing: var(--ls-display); margin: 0; }
+.ds-reset h2 { font: var(--fw-semibold) var(--fs-2xl)/var(--lh-snug) var(--font-sans); color: var(--fg-1); letter-spacing: var(--ls-tight); margin: 0; }
+.ds-reset h3 { font: var(--fw-semibold) var(--fs-xl)/var(--lh-snug) var(--font-sans); color: var(--fg-1); margin: 0; }
+.ds-reset p  { margin: 0; }
+.ds-reset a  { color: var(--fg-link); text-decoration: none; border-bottom: 1px solid currentColor; }
+.ds-reset a:hover { color: var(--fg-link-hover); }

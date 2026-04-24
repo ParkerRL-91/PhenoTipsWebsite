@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Demo — PhenoTips</title>
+  <meta name="description" content="See PhenoTips in your workflow. Book a demo and we'll walk through your program's specific use case — rare disease, cancer genetics, or health system infrastructure.">
+  <meta property="og:title" content="Book a Demo — PhenoTips">
+  <meta property="og:description" content="See PhenoTips in your workflow. Book a demo and we'll walk through your program's specific use case — rare disease, cancer genetics, or health system infrastructure.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo-phenotips-full.png" alt="PhenoTips">
+      </a>
+      <ul class="nav__links" role="list">
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">
+            Solutions <i data-lucide="chevron-down" style="width:14px;height:14px;"></i>
+          </a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+            <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+            <li><a href="solutions/health-systems.html">Health Systems</a></li>
+          </ul>
+        </li>
+        <li><a href="platform.html" class="nav__link">Platform</a></li>
+        <li><a href="roi-calculator.html" class="nav__link">ROI Calculator</a></li>
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">Resources <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="webinars.html">Webinars</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">About <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="team.html">The Team</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="nav__link active">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="#" class="nav__login">Login</a>
+        <a href="contact.html" class="btn btn--primary">Book a Demo</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__mobile-menu">
+      <p class="nav__mobile-section-title">Solutions</p>
+      <ul>
+        <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+        <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+        <li><a href="solutions/health-systems.html">Health Systems</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Product</p>
+      <ul>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="roi-calculator.html">ROI Calculator</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Resources</p>
+      <ul>
+        <li><a href="webinars.html">Webinars</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Company</p>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="team.html">The Team</a></li>
+        <li><a href="contact.html">Contact / Book a Demo</a></li>
+      </ul>
+    </nav>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Book a Demo</span>
+      <h1>See PhenoTips <em>in your workflow.</em></h1>
+      <p class="lead">Discovery call tailored to your specialty. Walkthrough built around your current workflow. ROI and implementation roadmap delivered in one session.</p>
+    </div>
+  </section>
+
+  <!-- FORM + SIDEBAR -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:var(--space-10);align-items:start;">
+
+        <!-- FORM -->
+        <div>
+          <form action="#" method="POST" novalidate>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="first_name" autocomplete="given-name" required>
+              </div>
+              <div class="form-field">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="last_name" autocomplete="family-name" required>
+              </div>
+              <div class="form-field">
+                <label for="email">Work email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="institution">Institution</label>
+                <input type="text" id="institution" name="institution" autocomplete="organization" required>
+              </div>
+              <div class="form-field">
+                <label for="role">Your role</label>
+                <select id="role" name="role">
+                  <option value="">Select your role</option>
+                  <option>Genetic Counselor</option>
+                  <option>Clinical Geneticist</option>
+                  <option>Program Director</option>
+                  <option>Lab Director / Bioinformatician</option>
+                  <option>IT / Health Informatics</option>
+                  <option>Researcher</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="specialty">Primary specialty</label>
+                <select id="specialty" name="specialty">
+                  <option value="">Select specialty</option>
+                  <option>Rare Disease / General Genetics</option>
+                  <option>Cancer Genetics</option>
+                  <option>Health Systems / NHS</option>
+                  <option>Cardiac Genetics</option>
+                  <option>Research</option>
+                  <option>Multiple specialties</option>
+                </select>
+              </div>
+              <div class="form-field form-field--full">
+                <label for="message">Anything specific you'd like to cover? (optional)</label>
+                <textarea id="message" name="message" placeholder="Describe your program size, current workflows, and the outcomes you are targeting."></textarea>
+              </div>
+              <div class="form-field--full">
+                <button type="submit" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;">
+                  Request a Demo
+                  <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
+                </button>
+                <p style="font-size:var(--fs-xs);color:var(--fg-4);margin-top:var(--space-3);text-align:center;">We respond within one business day. Your information is never shared with third parties.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div style="display:flex;flex-direction:column;gap:var(--space-5);">
+
+          <div class="card card--branded">
+            <span class="eyebrow" style="margin-bottom:var(--space-3);">What to expect</span>
+            <div style="display:flex;flex-direction:column;gap:var(--space-4);">
+              <div style="display:flex;gap:var(--space-3);">
+                <div style="width:32px;height:32px;border-radius:50%;background:var(--pheno-500);display:flex;align-items:center;justify-content:center;color:white;font-size:var(--fs-sm);font-weight:700;flex-shrink:0;">1</div>
+                <div>
+                  <p style="font-weight:var(--fw-semibold);font-size:var(--fs-sm);color:var(--fg-1);">Discovery call (30 min)</p>
+                  <p style="font-size:var(--fs-xs);color:var(--fg-3);">You share your program, current tools, and bottlenecks. We map your specific workflow.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:var(--space-3);">
+                <div style="width:32px;height:32px;border-radius:50%;background:var(--pheno-500);display:flex;align-items:center;justify-content:center;color:white;font-size:var(--fs-sm);font-weight:700;flex-shrink:0;">2</div>
+                <div>
+                  <p style="font-weight:var(--fw-semibold);font-size:var(--fs-sm);color:var(--fg-1);">Tailored demo (45–60 min)</p>
+                  <p style="font-size:var(--fs-xs);color:var(--fg-3);">Live walkthrough of pedigree, phenotyping, risk assessment, and EHR sync — built around your specialty.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:var(--space-3);">
+                <div style="width:32px;height:32px;border-radius:50%;background:var(--pheno-500);display:flex;align-items:center;justify-content:center;color:white;font-size:var(--fs-sm);font-weight:700;flex-shrink:0;">3</div>
+                <div>
+                  <p style="font-weight:var(--fw-semibold);font-size:var(--fs-sm);color:var(--fg-1);">ROI and implementation plan</p>
+                  <p style="font-size:var(--fs-xs);color:var(--fg-3);">Concrete numbers: hours reclaimed, efficiency gains, deployment timeline, and resource requirements for your program.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="eyebrow" style="margin-bottom:var(--space-4);">Trusted by</span>
+            <div style="display:flex;flex-direction:column;gap:var(--space-2);">
+              <p style="font-size:var(--fs-sm);color:var(--fg-2);">SickKids · Children's Mercy Kansas City · CHU Sainte-Justine · BC Children's Hospital · Cambridge University Hospitals · Great Ormond Street Hospital · Care4Rare Canada · UW-Madison</p>
+            </div>
+            <div style="margin-top:var(--space-4);padding-top:var(--space-4);border-top:1px solid var(--border-1);">
+              <div class="footer__compliance" style="gap:var(--space-2);">
+                <span style="font-size:11px;font-weight:600;color:var(--fg-4);">HIPAA</span>
+                <span style="color:var(--fg-4);">|</span>
+                <span style="font-size:11px;font-weight:600;color:var(--fg-4);">GDPR</span>
+                <span style="color:var(--fg-4);">|</span>
+                <span style="font-size:11px;font-weight:600;color:var(--fg-4);">DSPT</span>
+                <span style="color:var(--fg-4);">|</span>
+                <span style="font-size:11px;font-weight:600;color:var(--fg-4);">SOC2</span>
+                <span style="color:var(--fg-4);">|</span>
+                <span style="font-size:11px;font-weight:600;color:var(--fg-4);">CE+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <span class="testimonial__marks">"</span>
+            <p class="testimonial__quote" style="font-size:var(--fs-base);">With PhenoTips I've never had any problems — it just works.</p>
+            <div class="testimonial__attribution">
+              Prof. Marc Tischkowitz
+              <span>Cambridge University Hospitals NHS Trust</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo-phenotips-full.png" alt="PhenoTips">
+          <p>The world's first Genomic Health Record. Founded 2011 at BC Children's Hospital.</p>
+        </div>
+        <div class="footer__links-grid">
+          <div class="footer__col">
+            <p class="footer__col-title">Solutions</p>
+            <ul>
+              <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+              <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+              <li><a href="solutions/health-systems.html">Health Systems</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Platform</p>
+            <ul>
+              <li><a href="platform.html">Platform Overview</a></li>
+              <li><a href="roi-calculator.html">ROI Calculator</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Resources</p>
+            <ul>
+              <li><a href="webinars.html">Webinars</a></li>
+              <li><a href="publications.html">Publications</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Company</p>
+            <ul>
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="team.html">The Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__compliance">
+          <span>HIPAA</span><span>|</span><span>GDPR</span><span>|</span>
+          <span>DSPT</span><span>|</span><span>SOC2</span><span>|</span><span>CE+</span>
+        </div>
+        <p class="footer__legal">&copy; 2024 PhenoTips. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

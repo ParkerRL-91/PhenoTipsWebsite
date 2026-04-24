@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — PhenoTips</title>
+  <meta name="description" content="PhenoTips began in 2012 as a joint research project between the University of Toronto and SickKids Hospital — the first clinical tool to operationalize the Human Phenotype Ontology. Today it serves 100+ institutions worldwide.">
+  <meta property="og:title" content="About — PhenoTips">
+  <meta property="og:description" content="Founded in 2012 at the University of Toronto and SickKids. The first clinical tool to operationalize the Human Phenotype Ontology. Trusted by 100+ institutions worldwide.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo-phenotips-full.png" alt="PhenoTips">
+      </a>
+      <ul class="nav__links" role="list">
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">
+            Solutions <i data-lucide="chevron-down" style="width:14px;height:14px;"></i>
+          </a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+            <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+            <li><a href="solutions/health-systems.html">Health Systems</a></li>
+          </ul>
+        </li>
+        <li><a href="platform.html" class="nav__link">Platform</a></li>
+        <li><a href="roi-calculator.html" class="nav__link">ROI Calculator</a></li>
+        <li>
+          <a href="#" class="nav__link" aria-haspopup="true">Resources <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="webinars.html">Webinars</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="nav__link active" aria-haspopup="true">About <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="team.html">The Team</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="#" class="nav__login">Login</a>
+        <a href="contact.html" class="btn btn--primary">Book a Demo</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__mobile-menu">
+      <p class="nav__mobile-section-title">Solutions</p>
+      <ul>
+        <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+        <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+        <li><a href="solutions/health-systems.html">Health Systems</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Product</p>
+      <ul>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="roi-calculator.html">ROI Calculator</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Resources</p>
+      <ul>
+        <li><a href="webinars.html">Webinars</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Company</p>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="team.html">The Team</a></li>
+        <li><a href="contact.html">Contact / Book a Demo</a></li>
+      </ul>
+    </nav>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Our Story</span>
+      <h1>Born from clinical need. <em>Built for clinical use.</em></h1>
+      <p class="lead">PhenoTips began in 2012 as a joint research project between computer scientists at the University of Toronto and geneticists at SickKids Hospital — and was the first clinical tool to operationalize the Human Phenotype Ontology. Today it serves genetics programs at 100+ institutions across North America, Europe, and beyond.</p>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-10);align-items:center;">
+        <div>
+          <span class="eyebrow">Mission</span>
+          <h2>End the diagnostic odyssey for every patient.</h2>
+          <p style="margin-top:var(--space-4);">The average rare disease patient waits 4 to 7 years for a diagnosis. They see specialist after specialist, their history re-entered from scratch at each visit, their phenotype data scattered across disconnected systems.</p>
+          <p style="margin-top:var(--space-4);">PhenoTips exists to close that gap — through structured data, connected workflows, and tools that clinicians actually want to use.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);">
+          <div class="card card--branded" style="text-align:center;">
+            <span style="font-size:var(--fs-3xl);font-weight:var(--fw-semibold);color:var(--pheno-600);display:block;line-height:1;">100+</span>
+            <p style="font-size:var(--fs-sm);color:var(--fg-3);margin-top:var(--space-2);">clinical institutions worldwide</p>
+          </div>
+          <div class="card card--branded" style="text-align:center;">
+            <span style="font-size:var(--fs-3xl);font-weight:var(--fw-semibold);color:var(--pheno-600);display:block;line-height:1;">2012</span>
+            <p style="font-size:var(--fs-sm);color:var(--fg-3);margin-top:var(--space-2);">founded at the University of Toronto and SickKids</p>
+          </div>
+          <div class="card card--branded" style="text-align:center;">
+            <span style="font-size:var(--fs-3xl);font-weight:var(--fw-semibold);color:var(--pheno-600);display:block;line-height:1;">1st</span>
+            <p style="font-size:var(--fs-sm);color:var(--fg-3);margin-top:var(--space-2);">clinical HPO implementation globally</p>
+          </div>
+          <div class="card card--branded" style="text-align:center;">
+            <span style="font-size:var(--fs-3xl);font-weight:var(--fw-semibold);color:var(--pheno-600);display:block;line-height:1;">30×</span>
+            <p style="font-size:var(--fs-sm);color:var(--fg-3);margin-top:var(--space-2);">faster to a differential diagnosis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section section--wash">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-10);">
+        <div>
+          <span class="eyebrow">History</span>
+          <h2>Built incrementally, alongside clinicians.</h2>
+          <p style="margin-top:var(--space-4);margin-bottom:var(--space-7);">Every feature in PhenoTips was shaped by the genetics programs that use it — starting from a single research collaboration between the University of Toronto and SickKids, growing into a platform trusted by programs on four continents.</p>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <p class="timeline-item__year">2012</p>
+              <p class="timeline-item__text">Began as a joint research project between computer scientists at the University of Toronto and geneticists at SickKids Hospital — building the first clinical tool to operationalize the Human Phenotype Ontology (HPO).</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-item__year">2014</p>
+              <p class="timeline-item__text">Incorporated as a clinical software company. Began rolling out PhenoTips to academic medical centers and rare disease programs across North America.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-item__year">2017</p>
+              <p class="timeline-item__text">Cancer risk assessment module launched. CanRisk, Gail, Tyrer-Cuzick, PREMM5, and IBIS integrated into a single pedigree workflow.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-item__year">2019</p>
+              <p class="timeline-item__text">SMART on FHIR–based EHR embedding launched for Epic and Cerner. DSPT and CE+ certification achieved for UK healthcare deployments.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-item__year">2021</p>
+              <p class="timeline-item__text">Research Cloud launched. Multi-institutional de-identified genomic data sharing enabled across 50+ programs without re-consenting patients.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-item__year">2024</p>
+              <p class="timeline-item__text">100+ clinical institutions. HIPAA, GDPR, DSPT, SOC2, and CE+ certified. AI-assisted test recommendation rolled into the platform. Named to Canada's 200 Best Startup Employers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="eyebrow">Why it matters</span>
+          <h2>The problem has always been data.</h2>
+          <p style="margin-top:var(--space-4);">Clinical genomics generates extraordinary complexity — family histories spanning three generations, phenotype data captured in free text, variant findings living in lab systems disconnected from the clinical record, risk models housed in separate tools that require the same data entered multiple times.</p>
+          <p style="margin-top:var(--space-4);">PhenoTips was designed to solve this at the data layer — by making genomic information structured, interoperable, and actionable at the point of care.</p>
+          <p style="margin-top:var(--space-4);">That is why it was built at a hospital, not a startup. And why it has stayed in continuous clinical use for over a decade.</p>
+
+          <div style="margin-top:var(--space-7);">
+            <span class="eyebrow">Recognized by</span>
+            <div style="margin-top:var(--space-4);display:flex;flex-direction:column;gap:var(--space-3);">
+              <div style="display:flex;align-items:center;gap:var(--space-3);font-size:var(--fs-sm);color:var(--fg-2);">
+                <i data-lucide="check" style="width:16px;height:16px;color:var(--pheno-400);flex-shrink:0;"></i>
+                GA4GH — Global Alliance for Genomics and Health member
+              </div>
+              <div style="display:flex;align-items:center;gap:var(--space-3);font-size:var(--fs-sm);color:var(--fg-2);">
+                <i data-lucide="check" style="width:16px;height:16px;color:var(--pheno-400);flex-shrink:0;"></i>
+                Monarch Initiative — HPO founding contributor
+              </div>
+              <div style="display:flex;align-items:center;gap:var(--space-3);font-size:var(--fs-sm);color:var(--fg-2);">
+                <i data-lucide="check" style="width:16px;height:16px;color:var(--pheno-400);flex-shrink:0;"></i>
+                NORD — National Organization for Rare Disorders partner
+              </div>
+              <div style="display:flex;align-items:center;gap:var(--space-3);font-size:var(--fs-sm);color:var(--fg-2);">
+                <i data-lucide="check" style="width:16px;height:16px;color:var(--pheno-400);flex-shrink:0;"></i>
+                Care4Rare Canada — national rare disease network
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:var(--space-7);">
+        <span class="eyebrow">Certifications</span>
+        <h2>Certified for every healthcare jurisdiction we serve.</h2>
+      </div>
+      <div style="display:flex;justify-content:center;gap:var(--space-4);flex-wrap:wrap;">
+        <div class="card" style="text-align:center;min-width:140px;">
+          <i data-lucide="shield-check" style="width:32px;height:32px;color:var(--pheno-400);margin:0 auto var(--space-3);"></i>
+          <p style="font-weight:700;font-size:var(--fs-lg);color:var(--pheno-700);">HIPAA</p>
+          <p style="font-size:var(--fs-xs);color:var(--fg-4);">US Healthcare Privacy</p>
+        </div>
+        <div class="card" style="text-align:center;min-width:140px;">
+          <i data-lucide="shield-check" style="width:32px;height:32px;color:var(--pheno-400);margin:0 auto var(--space-3);"></i>
+          <p style="font-weight:700;font-size:var(--fs-lg);color:var(--pheno-700);">GDPR</p>
+          <p style="font-size:var(--fs-xs);color:var(--fg-4);">European Data Protection</p>
+        </div>
+        <div class="card" style="text-align:center;min-width:140px;">
+          <i data-lucide="shield-check" style="width:32px;height:32px;color:var(--pheno-400);margin:0 auto var(--space-3);"></i>
+          <p style="font-weight:700;font-size:var(--fs-lg);color:var(--pheno-700);">DSPT</p>
+          <p style="font-size:var(--fs-xs);color:var(--fg-4);">NHS Data Security</p>
+        </div>
+        <div class="card" style="text-align:center;min-width:140px;">
+          <i data-lucide="shield-check" style="width:32px;height:32px;color:var(--pheno-400);margin:0 auto var(--space-3);"></i>
+          <p style="font-weight:700;font-size:var(--fs-lg);color:var(--pheno-700);">SOC2</p>
+          <p style="font-size:var(--fs-xs);color:var(--fg-4);">Security Audit</p>
+        </div>
+        <div class="card" style="text-align:center;min-width:140px;">
+          <i data-lucide="shield-check" style="width:32px;height:32px;color:var(--pheno-400);margin:0 auto var(--space-3);"></i>
+          <p style="font-weight:700;font-size:var(--fs-lg);color:var(--pheno-700);">CE+</p>
+          <p style="font-size:var(--fs-xs);color:var(--fg-4);">Medical Device</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>See PhenoTips in your workflow.</h2>
+      <p>We will walk through your program's specific use case — no generic pitch decks.</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="contact.html" class="btn btn--primary btn--lg">Book a Demo</a>
+        <a href="platform.html" class="btn btn--ghost btn--lg">Explore the Platform</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo-phenotips-full.png" alt="PhenoTips">
+          <p>The world's first Genomic Health Record. Founded 2011 at BC Children's Hospital.</p>
+        </div>
+        <div class="footer__links-grid">
+          <div class="footer__col">
+            <p class="footer__col-title">Solutions</p>
+            <ul>
+              <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+              <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+              <li><a href="solutions/health-systems.html">Health Systems</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Platform</p>
+            <ul>
+              <li><a href="platform.html">Platform Overview</a></li>
+              <li><a href="roi-calculator.html">ROI Calculator</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Resources</p>
+            <ul>
+              <li><a href="webinars.html">Webinars</a></li>
+              <li><a href="publications.html">Publications</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Company</p>
+            <ul>
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="team.html">The Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__compliance">
+          <span>HIPAA</span><span>|</span><span>GDPR</span><span>|</span>
+          <span>DSPT</span><span>|</span><span>SOC2</span><span>|</span><span>CE+</span>
+        </div>
+        <p class="footer__legal">&copy; 2024 PhenoTips. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

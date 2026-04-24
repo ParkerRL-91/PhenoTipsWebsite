@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webinars &amp; Speaker Series — PhenoTips</title>
+  <meta name="description" content="The PhenoTips Speaker Series: monthly webinars and a podcast for genetics professionals — featuring leading clinicians, counselors, and researchers in clinical genomics.">
+  <meta property="og:title" content="Webinars &amp; Speaker Series — PhenoTips">
+  <meta property="og:description" content="Monthly webinars and a podcast for genetics professionals. Hosted by Kira Dineen of DNA Today.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="assets/logo-phenotips-full.png" alt="PhenoTips"></a>
+      <ul class="nav__links" role="list">
+        <li><a href="#" class="nav__link" aria-haspopup="true">Solutions <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+            <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+            <li><a href="solutions/health-systems.html">Health Systems</a></li>
+          </ul>
+        </li>
+        <li><a href="platform.html" class="nav__link">Platform</a></li>
+        <li><a href="roi-calculator.html" class="nav__link">ROI Calculator</a></li>
+        <li><a href="#" class="nav__link active" aria-haspopup="true">Resources <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="webinars.html">Webinars</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="nav__link" aria-haspopup="true">About <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="team.html">The Team</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="#" class="nav__login">Login</a>
+        <a href="contact.html" class="btn btn--primary">Book a Demo</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="nav__mobile-menu">
+      <p class="nav__mobile-section-title">Solutions</p>
+      <ul>
+        <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+        <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+        <li><a href="solutions/health-systems.html">Health Systems</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Product</p>
+      <ul>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="roi-calculator.html">ROI Calculator</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Resources</p>
+      <ul>
+        <li><a href="webinars.html">Webinars</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+      <p class="nav__mobile-section-title">Company</p>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="team.html">The Team</a></li>
+        <li><a href="contact.html">Contact / Book a Demo</a></li>
+      </ul>
+    </nav>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Speaker Series</span>
+      <h1>Conversations for the people doing <em>the work of clinical genomics.</em></h1>
+      <p class="lead">Each month, PhenoTips hosts a panel of clinicians, counselors, and researchers — exploring the practice of genetics, the systems we work in, and what is changing in the field. Watch live, replay any time, or subscribe as a podcast.</p>
+      <div class="btn-group">
+        <a href="#latest" class="btn btn--primary btn--lg">Watch the Latest</a>
+        <a href="#subscribe" class="btn btn--secondary btn--lg">Subscribe</a>
+      </div>
+      <div style="display:flex;gap:var(--space-5);flex-wrap:wrap;margin-top:var(--space-6);">
+        <div style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--fs-sm);color:var(--pheno-700);font-weight:var(--fw-semibold);">
+          <i data-lucide="mic" style="width:16px;height:16px;color:var(--pheno-400);"></i>
+          Hosted by Kira Dineen, DNA Today
+        </div>
+        <div style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--fs-sm);color:var(--pheno-700);font-weight:var(--fw-semibold);">
+          <i data-lucide="library" style="width:16px;height:16px;color:var(--pheno-400);"></i>
+          40+ episodes available
+        </div>
+        <div style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--fs-sm);color:var(--pheno-700);font-weight:var(--fw-semibold);">
+          <i data-lucide="calendar" style="width:16px;height:16px;color:var(--pheno-400);"></i>
+          New episode every month
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST FEATURE -->
+  <section class="section" id="latest">
+    <div class="container">
+      <div class="section-heading reveal" style="text-align:left;max-width:none;margin:0 0 var(--space-7);">
+        <span class="eyebrow">Most recent</span>
+        <h2>Latest episode.</h2>
+      </div>
+      <div class="webinar-feature reveal">
+        <div class="webinar-feature__art">
+          <div class="webinar-feature__play"><i data-lucide="play" style="width:32px;height:32px;"></i></div>
+          <span class="webinar-feature__date">April 22, 2026</span>
+        </div>
+        <div class="webinar-feature__content">
+          <span class="eyebrow">Panel discussion · Q&amp;A</span>
+          <h3>Building Business Cases for Genomics</h3>
+          <p>How do you make the case for a genetics program — to your CFO, your administration, your board? Three program leaders share the language, the numbers, and the framing that has worked for them.</p>
+          <div class="webinar-feature__speakers">
+            <div class="webinar-speaker"><div class="team-avatar team-avatar--sm">CC</div><div><p class="team-name">Dr. Colleen Campbell</p><p class="team-role">Panelist</p></div></div>
+            <div class="webinar-speaker"><div class="team-avatar team-avatar--sm">AS</div><div><p class="team-name">Andrea Spencer</p><p class="team-role">Panelist</p></div></div>
+            <div class="webinar-speaker"><div class="team-avatar team-avatar--sm">MT</div><div><p class="team-name">Megan Trinkle-Knotts</p><p class="team-role">Panelist</p></div></div>
+            <div class="webinar-speaker"><div class="team-avatar team-avatar--sm">KD</div><div><p class="team-name">Kira Dineen</p><p class="team-role">Host · DNA Today</p></div></div>
+          </div>
+          <div class="btn-group" style="margin-top:var(--space-5);">
+            <a href="#" class="btn btn--primary">Watch Now</a>
+            <a href="#" class="btn btn--secondary">Listen as Podcast</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHIVE GRID -->
+  <section class="section section--wash">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Episode archive</span>
+        <h2>Recent episodes.</h2>
+        <p>All episodes are available on demand and as a podcast.</p>
+      </div>
+      <div class="grid grid--3">
+
+        <article class="card card--elevated reveal">
+          <div class="webinar-card__art"><i data-lucide="play" style="width:24px;height:24px;"></i></div>
+          <p class="webinar-card__date">February 25, 2026 · Episode 41</p>
+          <h3 style="font-size:var(--fs-lg);">Matchmaking for Rare Disease Diagnosis</h3>
+          <p style="font-size:var(--fs-sm);">How global case-matching networks are accelerating diagnosis for the world's rarest conditions.</p>
+          <p class="webinar-card__speakers">Dr. Nara Sobreira · Matthew Osmond, CGC · Dr. Orion Buske</p>
+          <a href="#" class="webinar-card__link">Watch the episode <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+        </article>
+
+        <article class="card card--elevated reveal" style="transition-delay:60ms;">
+          <div class="webinar-card__art"><i data-lucide="play" style="width:24px;height:24px;"></i></div>
+          <p class="webinar-card__date">September 29, 2025 · Episode 40</p>
+          <h3 style="font-size:var(--fs-lg);">Proving Profitability in Genomics</h3>
+          <p style="font-size:var(--fs-sm);">A panel of program leaders on the economics of running — and growing — a clinical genetics program.</p>
+          <p class="webinar-card__speakers">Dr. Colleen A. Campbell · Dr. Eric Green · Brian Reys · Marianne Olson</p>
+          <a href="#" class="webinar-card__link">Watch the episode <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+        </article>
+
+        <article class="card card--elevated reveal" style="transition-delay:120ms;">
+          <div class="webinar-card__art"><i data-lucide="play" style="width:24px;height:24px;"></i></div>
+          <p class="webinar-card__date">June 2025 · Episode 39</p>
+          <h3 style="font-size:var(--fs-lg);">AI in the Clinical Genetics Workflow</h3>
+          <p style="font-size:var(--fs-sm);">Where AI is already useful in genetics — and where the hype outpaces the evidence.</p>
+          <p class="webinar-card__speakers">Featured guests from leading academic medical centers</p>
+          <a href="#" class="webinar-card__link">Watch the episode <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+        </article>
+
+        <article class="card card--elevated reveal">
+          <div class="webinar-card__art"><i data-lucide="play" style="width:24px;height:24px;"></i></div>
+          <p class="webinar-card__date">April 2025 · Episode 38</p>
+          <h3 style="font-size:var(--fs-lg);">LGBTQ+ Affirming Genetic Care</h3>
+          <p style="font-size:var(--fs-sm);">How clinical software, intake forms, and pedigrees can — and should — represent every patient and family.</p>
+          <p class="webinar-card__speakers">Genetic counselors from across North America</p>
+          <a href="#" class="webinar-card__link">Watch the episode <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+        </article>
+
+        <article class="card card--elevated reveal" style="transition-delay:60ms;">
+          <div class="webinar-card__art"><i data-lucide="play" style="width:24px;height:24px;"></i></div>
+          <p class="webinar-card__date">February 2025 · Episode 37</p>
+          <h3 style="font-size:var(--fs-lg);">Genetic Counselor Burnout — and What's Helping</h3>
+          <p style="font-size:var(--fs-sm);">A frank panel on caseload, administrative burden, and the structural changes that move the needle.</p>
+          <p class="webinar-card__speakers">Practising genetic counselors and program leaders</p>
+          <a href="#" class="webinar-card__link">Watch the episode <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+        </article>
+
+        <article class="card card--elevated reveal" style="transition-delay:120ms;">
+          <div class="webinar-card__art"><i data-lucide="play" style="width:24px;height:24px;"></i></div>
+          <p class="webinar-card__date">December 2024 · Episode 36</p>
+          <h3 style="font-size:var(--fs-lg);">Whole Genome Sequencing in Pediatric Care</h3>
+          <p style="font-size:var(--fs-sm);">How leading children's hospitals are operationalizing WGS — from referral to result.</p>
+          <p class="webinar-card__speakers">Pediatric clinical geneticists and lab directors</p>
+          <a href="#" class="webinar-card__link">Watch the episode <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+        </article>
+
+      </div>
+
+      <div class="text-center" style="margin-top:var(--space-7);">
+        <a href="#" class="btn btn--secondary btn--lg">View All 40+ Episodes →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Browse by topic</span>
+        <h2>What we cover.</h2>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:var(--space-3);justify-content:center;">
+        <span class="topic-chip">Rare disease diagnosis</span>
+        <span class="topic-chip">Cancer genetics</span>
+        <span class="topic-chip">Risk assessment</span>
+        <span class="topic-chip">Genetic counselor practice</span>
+        <span class="topic-chip">EHR integration</span>
+        <span class="topic-chip">SMART on FHIR</span>
+        <span class="topic-chip">AI in genomics</span>
+        <span class="topic-chip">Pediatric genetics</span>
+        <span class="topic-chip">Whole genome sequencing</span>
+        <span class="topic-chip">LGBTQ+ affirming care</span>
+        <span class="topic-chip">Patient experience</span>
+        <span class="topic-chip">Health system economics</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="section section--sky" id="subscribe">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Subscribe</span>
+        <h2>Never miss an episode.</h2>
+        <p>Get a short email when each new episode drops — no spam, just the link and the speakers.</p>
+      </div>
+      <form action="#" method="POST" class="subscribe-form reveal" novalidate>
+        <input type="email" placeholder="Your work email" aria-label="Your email" required>
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+
+      <div class="text-center" style="margin-top:var(--space-7);">
+        <p style="font-size:var(--fs-sm);color:var(--fg-3);margin-bottom:var(--space-4);">Or follow the podcast wherever you listen:</p>
+        <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+          <a href="#" class="btn btn--secondary"><i data-lucide="podcast" style="width:16px;height:16px;"></i> Apple Podcasts</a>
+          <a href="#" class="btn btn--secondary"><i data-lucide="podcast" style="width:16px;height:16px;"></i> Spotify</a>
+          <a href="#" class="btn btn--secondary"><i data-lucide="rss" style="width:16px;height:16px;"></i> RSS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>See PhenoTips in your workflow.</h2>
+      <p>The Speaker Series is one way we contribute to the field. The platform is the other. Book a demo to see how genetics teams use PhenoTips every day.</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="contact.html" class="btn btn--primary btn--lg">Book a Demo</a>
+        <a href="platform.html" class="btn btn--ghost btn--lg">Explore the Platform</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo-phenotips-full.png" alt="PhenoTips">
+          <p>The world's first Genomic Health Record. Founded in 2012 at the University of Toronto and SickKids.</p>
+        </div>
+        <div class="footer__links-grid">
+          <div class="footer__col">
+            <p class="footer__col-title">Solutions</p>
+            <ul>
+              <li><a href="solutions/rare-disease.html">Rare Disease</a></li>
+              <li><a href="solutions/cancer-genetics.html">Cancer Genetics</a></li>
+              <li><a href="solutions/health-systems.html">Health Systems</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Platform</p>
+            <ul>
+              <li><a href="platform.html">Platform Overview</a></li>
+              <li><a href="roi-calculator.html">ROI Calculator</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Resources</p>
+            <ul>
+              <li><a href="webinars.html">Webinars</a></li>
+              <li><a href="publications.html">Publications</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p class="footer__col-title">Company</p>
+            <ul>
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="team.html">The Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__compliance">
+          <span>HIPAA</span><span>|</span><span>GDPR</span><span>|</span>
+          <span>DSPT</span><span>|</span><span>SOC2</span><span>|</span><span>CE+</span>
+        </div>
+        <p class="footer__legal">&copy; 2024 PhenoTips. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
