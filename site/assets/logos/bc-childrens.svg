@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 44" aria-label="BC Children's Hospital">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 44" aria-label="BC Children&#39;s Hospital">
   <g fill="#4B5662">
-    <circle cx="18" cy="22" r="13" fill="none" stroke="#4B5662" stroke-width="2.2"/>
-    <path d="M18 12 L18 32 M8 22 L28 22" stroke="#4B5662" stroke-width="2.2" stroke-linecap="round"/>
-    <text x="40" y="20" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="-0.01em">BC Children's</text>
-    <text x="40" y="34" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="10" font-weight="500" letter-spacing="0.06em" opacity="0.75">HOSPITAL</text>
+    <circle cx="18" cy="22" r="13" fill="none" stroke="#4B5662" stroke-width="2.2"></circle>
+    <path d="M18 12 L18 32 M8 22 L28 22" stroke="#4B5662" stroke-width="2.2" stroke-linecap="round"></path>
+    <text x="40" y="20" font-family="&#39;IBM Plex Sans&#39;, system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="-0.01em">BC Children&#39;s</text>
+    <text x="40" y="34" font-family="&#39;IBM Plex Sans&#39;, system-ui, sans-serif" font-size="10" font-weight="500" letter-spacing="0.06em" opacity="0.75">HOSPITAL</text>
   </g>
 </svg>

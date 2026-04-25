@@ -1673,8 +1673,13 @@ h4 {
   background: var(--bg-wash);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-brand);
-  padding: var(--space-7) var(--space-8);
-  margin: var(--space-8) 0;
+  padding: var(--space-3) var(--space-6);
+  margin: 4.5rem 0 var(--space-2);
+}
+
+/* When a .challenge is the only thing in a .section, tighten the section padding too */
+.section:has(> .container > .challenge:only-child) {
+  padding: var(--space-2) 0;
 }
 
 .challenge .eyebrow { margin-bottom: var(--space-3); }
@@ -2410,8 +2415,8 @@ img.team-avatar { padding: 0; }
   overflow: hidden;
   isolation: isolate;
   display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: var(--space-7);
+  grid-template-columns: 1fr 420px;
+  gap: var(--space-8);
   align-items: center;
 }
 

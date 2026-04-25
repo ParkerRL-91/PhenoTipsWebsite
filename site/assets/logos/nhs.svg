@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 44" aria-label="NHS">
   <g fill="#4B5662">
-    <rect x="2" y="10" width="96" height="24" rx="3" fill="none" stroke="#4B5662" stroke-width="2"/>
-    <text x="50" y="28" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="0.04em" text-anchor="middle">NHS</text>
+    <rect x="2" y="10" width="96" height="24" rx="3" fill="none" stroke="#4B5662" stroke-width="2"></rect>
+    <text x="50" y="28" font-family="&#39;IBM Plex Sans&#39;, system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="0.04em" text-anchor="middle">NHS</text>
   </g>
 </svg>
