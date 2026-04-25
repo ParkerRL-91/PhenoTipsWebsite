@@ -87,12 +87,68 @@
   <!-- HERO -->
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">The Platform</span>
-      <h1>One end-to-end <em>solution.</em></h1>
-      <p class="lead">Every tool a genetics program needs — phenotyping, pedigrees, risk assessment, variant review, report generation, and EHR integration — built into a single, certified platform.</p>
-      <div class="btn-group">
-        <a href="contact.html" class="btn btn--primary btn--lg">Book a Demo</a>
-        <a href="roi-calculator.html" class="btn btn--secondary btn--lg">Calculate ROI →</a>
+      <div class="hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow">The Platform</span>
+                <h1>One end-to-end <em>solution.</em></h1>
+                <p class="lead">Every tool a genetics program needs — phenotyping, pedigrees, risk assessment, variant review, report generation, and EHR integration — built into a single, certified platform.</p>
+                <div class="btn-group">
+                  <a href="contact.html" class="btn btn--primary btn--lg">Book a Demo</a>
+                  <a href="roi-calculator.html" class="btn btn--secondary btn--lg">Calculate ROI →</a>
+                </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card hero__card--main">
+            <p class="hero__card-label">Pedigree · 3 generations</p>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:var(--space-3) 0;">
+              <div style="display:flex;gap:32px;align-items:center;">
+                <div style="width:24px;height:24px;border:2.5px solid var(--pheno-500);border-radius:50%;"></div>
+                <div style="height:2px;width:32px;background:var(--pheno-300);"></div>
+                <div style="width:24px;height:24px;border:2.5px solid var(--pheno-500);background:var(--pheno-200);"></div>
+              </div>
+              <div style="width:2px;height:14px;background:var(--pheno-200);"></div>
+              <div style="display:flex;gap:18px;">
+                <div style="width:18px;height:18px;border:2px solid var(--pheno-400);border-radius:50%;"></div>
+                <div style="width:18px;height:18px;border:2px solid var(--pheno-400);background:var(--pheno-200);border-radius:50%;"></div>
+                <div style="width:18px;height:18px;border:2px solid var(--pheno-400);"></div>
+              </div>
+              <div style="width:2px;height:10px;background:var(--pheno-200);"></div>
+              <div style="display:flex;gap:14px;">
+                <div style="width:14px;height:14px;border:2px solid var(--pheno-300);"></div>
+                <div style="width:14px;height:14px;border:2px solid var(--pheno-300);border-radius:50%;"></div>
+              </div>
+            </div>
+            <p style="font-size:10px;color:var(--fg-4);text-align:center;margin-top:6px;text-transform:uppercase;letter-spacing:0.08em;">Auto-drawn from pre-visit questionnaire</p>
+          </div>
+
+          <div class="hero__card hero__card--chips">
+            <p class="hero__card-label">Flagged for testing</p>
+            <div style="display:flex;flex-direction:column;gap:8px;font-size:12px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="color:var(--fg-2);">Hereditary cancer panel</span>
+                <span style="font-family:var(--font-mono);font-weight:700;color:var(--pheno-600);">142</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="color:var(--fg-2);">WGS — undiagnosed</span>
+                <span style="font-family:var(--font-mono);font-weight:700;color:var(--pheno-600);">38</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="color:var(--fg-2);">Cardiac panel</span>
+                <span style="font-family:var(--font-mono);font-weight:700;color:var(--pheno-600);">21</span>
+              </div>
+              <div style="border-top:1px solid var(--border-1);padding-top:8px;display:flex;justify-content:space-between;align-items:center;">
+                <span style="color:var(--fg-3);font-size:11px;text-transform:uppercase;letter-spacing:0.06em;font-weight:600;">This week</span>
+                <span style="font-family:var(--font-mono);font-weight:700;color:var(--pheno-700);">201</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__card hero__card--stat">
+            <span class="num">30×</span>
+            <p class="lbl">faster to a differential</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

@@ -87,16 +87,45 @@
   <!-- HERO -->
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">Cancer Genetics</span>
-      <h1>Automated intake. <em>Integrated risk assessment.</em></h1>
-      <p class="lead">Today, genetic counselors juggle separate tools for pedigrees, risk assessments, and EHR documentation — entering the same data three times. PhenoTips consolidates all of it into a single, EHR-native workflow.</p>
-      <div class="page-hero__stat-pill">
-        <i data-lucide="clock" style="width:16px;height:16px;color:var(--pheno-400);"></i>
-        Save <strong style="margin: 0 4px;">30 minutes</strong> per patient encounter
-      </div>
-      <div class="btn-group">
-        <a href="../contact.html" class="btn btn--primary btn--lg">Book a Demo</a>
-        <a href="../roi-calculator.html" class="btn btn--secondary btn--lg">Calculate your ROI →</a>
+      <div class="hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow">Cancer Genetics</span>
+                <h1>Automated intake. <em>Integrated risk assessment.</em></h1>
+                <p class="lead">Today, genetic counselors juggle separate tools for pedigrees, risk assessments, and EHR documentation — entering the same data three times. PhenoTips consolidates all of it into a single, EHR-native workflow.</p>
+                <div class="page-hero__stat-pill">
+                  <i data-lucide="clock" style="width:16px;height:16px;color:var(--pheno-400);"></i>
+                  Save <strong style="margin: 0 4px;">30 minutes</strong> per patient encounter
+                </div>
+                <div class="btn-group">
+                  <a href="../contact.html" class="btn btn--primary btn--lg">Book a Demo</a>
+                  <a href="../roi-calculator.html" class="btn btn--secondary btn--lg">Calculate your ROI →</a>
+                </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card hero__card--main">
+            <p class="hero__card-label">Hereditary breast cancer · 5 models</p>
+            <div class="hero__card-mock-row"><span>BOADICEA / CanRisk</span><span class="pct pct--warn">38.2%</span></div>
+            <div class="hero__card-mock-row"><span>Tyrer-Cuzick (IBIS)</span><span class="pct pct--warn">31.2%</span></div>
+            <div class="hero__card-mock-row"><span>BRCAPRO</span><span class="pct pct--warn">29.7%</span></div>
+            <div class="hero__card-mock-row"><span>Gail Model</span><span class="pct pct--ok">8.7%</span></div>
+            <div class="hero__card-mock-row"><span>PREMM5 (Lynch)</span><span class="pct pct--ok">2.4%</span></div>
+          </div>
+
+          <div class="hero__card hero__card--chips">
+            <p class="hero__card-label">Family history · auto-drawn</p>
+            <div style="display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--fg-2);">
+              <div style="display:flex;justify-content:space-between;"><span>Mother</span><span style="color:var(--warn-500);font-weight:600;">BC dx 42</span></div>
+              <div style="display:flex;justify-content:space-between;"><span>Maternal aunt</span><span style="color:var(--warn-500);font-weight:600;">OC dx 55</span></div>
+              <div style="display:flex;justify-content:space-between;"><span>Sister</span><span style="color:var(--success-500);font-weight:600;">BRCA neg</span></div>
+            </div>
+          </div>
+
+          <div class="hero__card hero__card--stat">
+            <span class="num">30 min</span>
+            <p class="lbl">saved per assessment</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

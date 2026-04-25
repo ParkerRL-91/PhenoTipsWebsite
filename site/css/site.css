@@ -1643,6 +1643,11 @@ h4 {
 .page-hero h1 { color: var(--pheno-700); max-width: 14ch; margin-bottom: var(--space-5); }
 .page-hero .lead { margin-bottom: var(--space-6); }
 
+/* When the page-hero uses the split layout, the column already constrains
+   width — release the 14ch cap and let h1 / lead flow naturally. */
+.page-hero .hero__grid h1 { max-width: none; }
+.page-hero .hero__content { max-width: 620px; }
+
 .page-hero__stat-pill {
   display: inline-flex;
   align-items: center;
