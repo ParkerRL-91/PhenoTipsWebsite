@@ -565,10 +565,11 @@ h4 {
 }
 
 .hero__card--stat {
-  width: 200px;
-  top: 20px;
+  width: 180px;
+  top: auto;
+  bottom: 40px;
   right: -10px;
-  z-index: 2;
+  z-index: 4;
   padding: var(--space-4) var(--space-5);
   animation-delay: -4s;
   text-align: center;
@@ -637,7 +638,7 @@ h4 {
   .hero__visual { height: 300px; margin-top: var(--space-5); }
   .hero__card--main  { width: 320px; top: 0; left: 20%; }
   .hero__card--chips { width: 240px; bottom: 0; left: 5%; }
-  .hero__card--stat  { width: 180px; top: 30px; right: 5%; }
+  .hero__card--stat  { width: 160px; top: auto; bottom: 30px; right: 0; }
 }
 
 @media (max-width: 768px) {
