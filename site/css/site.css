@@ -2397,6 +2397,155 @@ img.team-avatar { padding: 0; }
 }
 
 /* ============================================================
+   FEATURED PULL QUOTE — editorial-style testimonial block
+   ============================================================ */
+
+.featured-quote {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 0;
+  align-items: stretch;
+  background: var(--bg-1);
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.featured-quote__art {
+  background: var(--bg-sky-gradient);
+  min-height: 280px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-7);
+  gap: var(--space-5);
+}
+
+.featured-quote__art::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(14, 67, 104, 0.06) 1.2px, transparent 1.5px);
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+
+.featured-quote__institution {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-quote__institution img {
+  height: 64px;
+  width: auto;
+  max-width: 280px;
+  object-fit: contain;
+  color: var(--pheno-700);
+}
+
+.featured-quote__nhs {
+  position: relative;
+  z-index: 1;
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 6px 14px;
+  box-shadow: var(--shadow-sm);
+}
+
+.featured-quote__nhs img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+.featured-quote__body {
+  padding: var(--space-7) var(--space-8);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-quote__mark {
+  font-family: var(--font-serif);
+  font-size: 6.5rem;
+  color: var(--pheno-200);
+  line-height: 0.6;
+  position: absolute;
+  top: var(--space-5);
+  left: var(--space-6);
+  user-select: none;
+  pointer-events: none;
+}
+
+.featured-quote__text {
+  font-family: var(--font-serif);
+  font-size: clamp(var(--fs-lg), 2.2vw, var(--fs-2xl));
+  font-style: italic;
+  line-height: var(--lh-snug);
+  color: var(--pheno-800);
+  margin: 0 0 var(--space-5);
+  padding-left: var(--space-7);
+  text-wrap: balance;
+}
+
+.featured-quote__attr {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--fg-1);
+  padding-left: var(--space-7);
+  margin: 0;
+  line-height: var(--lh-snug);
+}
+
+.featured-quote__attr span {
+  display: block;
+  font-weight: var(--fw-regular);
+  color: var(--fg-3);
+  margin-top: 4px;
+  font-size: var(--fs-xs);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.featured-quote__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+  margin-left: var(--space-7);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--pheno-500);
+  text-decoration: none;
+  border-bottom: none;
+  transition: color var(--dur-fast) var(--ease-out), gap var(--dur-fast) var(--ease-out);
+}
+
+.featured-quote__link:hover {
+  color: var(--pheno-700);
+  gap: var(--space-3);
+}
+
+@media (max-width: 768px) {
+  .featured-quote { grid-template-columns: 1fr; }
+  .featured-quote__art { min-height: 180px; flex-direction: row; }
+  .featured-quote__institution img { height: 40px; }
+  .featured-quote__nhs img { height: 22px; }
+  .featured-quote__body { padding: var(--space-6); }
+  .featured-quote__mark { font-size: 4rem; top: var(--space-3); left: var(--space-3); }
+  .featured-quote__text,
+  .featured-quote__attr,
+  .featured-quote__link { padding-left: var(--space-5); margin-left: 0; }
+}
+
+/* ============================================================
    PRESS PAGE — refreshed design
    ============================================================ */
 
