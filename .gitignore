@@ -7,6 +7,9 @@ dist/
 .env
 .env.local
 
+# Local preview tooling (launch.json + serve.py) — not for repo
+.claude/
+
 # Memory directory (private session memory, not for repo)
 memory/
 
@@ -14,3 +17,4 @@ memory/
 General_Business_Case_Updated.docx
 PhenoTips ROI Calculator v3.xlsx
 Design Reference/PhenoVibes Design System.zip
+GAPP SmartRequisition PR Draft.docx
