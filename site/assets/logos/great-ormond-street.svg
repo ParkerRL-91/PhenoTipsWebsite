@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 44" aria-label="Great Ormond Street Hospital">
-  <g fill="currentColor">
-    <path d="M14 6 L24 16 L24 36 L4 36 L4 16 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-    <rect x="11" y="22" width="6" height="14" fill="currentColor"/>
-    <rect x="6" y="20" width="4" height="4" fill="currentColor"/>
-    <rect x="18" y="20" width="4" height="4" fill="currentColor"/>
+  <g fill="#4B5662">
+    <path d="M14 6 L24 16 L24 36 L4 36 L4 16 Z" fill="none" stroke="#4B5662" stroke-width="2.2" stroke-linejoin="round"/>
+    <rect x="11" y="22" width="6" height="14" fill="#4B5662"/>
+    <rect x="6" y="20" width="4" height="4" fill="#4B5662"/>
+    <rect x="18" y="20" width="4" height="4" fill="#4B5662"/>
     <text x="36" y="20" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="-0.01em">Great Ormond St</text>
     <text x="36" y="34" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="10" font-weight="500" letter-spacing="0.06em" opacity="0.75">HOSPITAL · NHS</text>
   </g>

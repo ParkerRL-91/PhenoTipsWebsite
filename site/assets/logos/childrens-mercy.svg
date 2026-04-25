@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 44" aria-label="Children's Mercy Kansas City">
-  <g fill="currentColor">
-    <path d="M14 8 L26 14 L26 26 C26 32 21 36 14 38 C7 36 2 32 2 26 L2 14 Z" fill="none" stroke="currentColor" stroke-width="2.2"/>
-    <path d="M14 16 L14 28 M8 22 L20 22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  <g fill="#4B5662">
+    <path d="M14 8 L26 14 L26 26 C26 32 21 36 14 38 C7 36 2 32 2 26 L2 14 Z" fill="none" stroke="#4B5662" stroke-width="2.2"/>
+    <path d="M14 16 L14 28 M8 22 L20 22" stroke="#4B5662" stroke-width="2.2" stroke-linecap="round"/>
     <text x="38" y="20" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="-0.01em">Children's Mercy</text>
     <text x="38" y="34" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="10" font-weight="500" letter-spacing="0.04em" opacity="0.75">KANSAS CITY</text>
   </g>
