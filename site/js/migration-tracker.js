@@ -33,13 +33,15 @@
       };
       console.info("[PhenoTips migration]", info);
 
-      // Send a beacon if MIGRATION_BEACON_URL is set on window
-      if (window.MIGRATION_BEACON_URL) {
-        try {
-          var blob = new Blob([JSON.stringify(info)], { type: "application/json" });
-          navigator.sendBeacon(window.MIGRATION_BEACON_URL, blob);
-        } catch (_) {}
-      }
+      // Send a beacon to the Netlify Function. Default endpoint resolves to
+      // /.netlify/functions/log-404 on the deployed Netlify site. Override
+      // by setting window.MIGRATION_BEACON_URL = "..." on the page (e.g.,
+      // for a different logging backend).
+      var beaconUrl = window.MIGRATION_BEACON_URL || "/.netlify/functions/log-404";
+      try {
+        var blob = new Blob([JSON.stringify(info)], { type: "application/json" });
+        navigator.sendBeacon(beaconUrl, blob);
+      } catch (_) {}
     }
   } catch (_) {}
 })();

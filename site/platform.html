@@ -34,6 +34,8 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"PhenoTips","alternateName":"PhenoTips Inc.","url":"https://phenotips.com","logo":"https://phenotips.com/assets/logo-phenotips-full.png","description":"PhenoTips is the unified genomics workflow solution \u2014 a clinical platform for phenotype capture, pedigree drawing, hereditary risk assessment, and EHR-integrated genetic test requisition. Trusted by 100+ institutions worldwide.","foundingDate":"2012","founder":[{"@type":"Person","name":"Orion Buske","jobTitle":"Co-founder & CEO"},{"@type":"Person","name":"Pawel Buczkowicz","jobTitle":"Co-founder & COO"},{"@type":"Person","name":"Michael Brudno","jobTitle":"Co-founder & Chairman"}],"sameAs":["https://www.linkedin.com/company/phenotips/","https://www.youtube.com/@phenotips","https://twitter.com/phenotips","https://bsky.app/profile/phenotips.bsky.social"],"contactPoint":[{"@type":"ContactPoint","contactType":"Sales","url":"https://phenotips.com/contact.html"}],"address":{"@type":"PostalAddress","addressCountry":"CA"}}</script>
   <!-- SEO: per-page schema -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"PhenoTips","url":"https://phenotips.com/platform","applicationCategory":"HealthApplication","applicationSubCategory":"Clinical genomics platform","operatingSystem":"Web-based \u00b7 SMART on FHIR","description":"One end-to-end solution: pedigrees, HPO phenotyping, cancer risk assessment, variant analysis, AI-assisted test ordering, and EHR integration via SMART on FHIR.","offers":{"@type":"Offer","url":"https://phenotips.com/contact"},"featureList":["HPO phenotyping","Pedigree drawing (auto-generated from patient questionnaire)","Cancer risk assessment (CanRisk, Tyrer-Cuzick, BRCAPRO, Gail, PREMM5)","Variant analysis with phenotype context","AI-assisted genomic test requisition","Clinical report generation","EHR integration via SMART on FHIR (Epic, Oracle Health/Cerner)"],"publisher":{"@type":"Organization","name":"PhenoTips","url":"https://phenotips.com"}}</script>
+  <!-- SEO: FAQPage schema -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is PhenoTips?","acceptedAnswer":{"@type":"Answer","text":"PhenoTips is the unified genomics workflow solution \u2014 a clinical software platform used by 100+ institutions to capture phenotypes (using Human Phenotype Ontology), draw pedigrees, run hereditary cancer risk models, support variant interpretation, and embed in EHRs as a SMART on FHIR app."}},{"@type":"Question","name":"Does PhenoTips integrate with Epic and Oracle Health (Cerner)?","acceptedAnswer":{"@type":"Answer","text":"Yes. PhenoTips runs as a SMART on FHIR app inside both Epic and Oracle Health (Cerner). Patient context is handed in via single sign-on, structured records flow back to the EHR, and there's no custom middleware required. PhenoTips also exchanges data with any HL7 FHIR\u2013compliant system."}},{"@type":"Question","name":"Is PhenoTips HIPAA, GDPR, and DSPT certified?","acceptedAnswer":{"@type":"Answer","text":"Yes. PhenoTips holds HIPAA, GDPR, DSPT (UK NHS Data Security and Protection Toolkit), SOC 2, and CE+ certifications, allowing deployment across US, EU, UK, and Canadian healthcare jurisdictions."}},{"@type":"Question","name":"Which cancer risk models does PhenoTips support?","acceptedAnswer":{"@type":"Answer","text":"PhenoTips runs CanRisk (BOADICEA V2), Tyrer-Cuzick (IBIS), BRCAPRO, Gail Model, and PREMM5 from a single shared pedigree \u2014 eliminating the duplicate data entry that costs counselors approximately 30 minutes per assessment."}},{"@type":"Question","name":"What is HPO and why does PhenoTips use it?","acceptedAnswer":{"@type":"Answer","text":"HPO is the Human Phenotype Ontology \u2014 a standardized vocabulary of over 17,000 clinical features used by genetics teams worldwide. PhenoTips was the first clinical tool to operationalize HPO; structured HPO terms make every phenotype searchable, comparable across institutions, and interpretable by computational diagnostic tools."}},{"@type":"Question","name":"Can PhenoTips help with genetic test ordering?","acceptedAnswer":{"@type":"Answer","text":"Yes. PhenoTips includes AI-assisted test recommendation through SmartRequisition, which uses the patient's HPO phenotype profile, family history, and prior workup to suggest the most appropriate genomic test \u2014 reducing duplicate orders, retests, and time spent on test selection."}}]}</script>
 </head>
 <body>
 
@@ -41,7 +43,7 @@
   <nav class="nav" role="navigation">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
-        <img src="assets/logo-phenotips-full.png" alt="PhenoTips">
+        <img src="assets/logo-phenotips-full.png" alt="PhenoTips" width="200" height="32" decoding="async">
       </a>
       <ul class="nav__links" role="list">
         <li>
@@ -242,7 +244,7 @@
           <div class="card__icon"><i data-lucide="search" style="width:22px;height:22px;"></i></div>
           <span class="eyebrow" style="font-size:10px;">HPO Phenotyping</span>
           <h3>Capture every finding in a standard language.</h3>
-          <p>Concept recognition maps free-text clinical notes to Human Phenotype Ontology (HPO) terms automatically. Every phenotype is searchable and comparable.</p>
+          <p>Concept recognition maps free-text clinical notes to Human Phenotype Ontology (HPO) terms automatically. Learn how this <a href="solutions/rare-disease.html">accelerates rare disease diagnosis 3× faster</a>. Every phenotype is searchable and comparable.</p>
         </div>
 
         <div class="feature-item">
@@ -256,7 +258,7 @@
           <div class="card__icon"><i data-lucide="activity" style="width:22px;height:22px;"></i></div>
           <span class="eyebrow" style="font-size:10px;">Cancer Risk Assessment</span>
           <h3>Run CanRisk, Gail, IBIS, PREMM5, and Tyrer-Cuzick simultaneously.</h3>
-          <p>All major hereditary cancer risk models calculated from one shared pedigree. Side-by-side results. No re-entry. Saves approximately 30 minutes per assessment.</p>
+          <p>All major hereditary cancer risk models calculated from one shared pedigree. Side-by-side results. No re-entry. Saves approximately 30 minutes per assessment — see how <a href="solutions/cancer-genetics.html">cancer genetics teams use this every day</a>.</p>
         </div>
 
         <div class="feature-item">
@@ -307,10 +309,10 @@
           <h2>Connects to the systems your teams already use.</h2>
           <p style="margin:var(--space-4) 0 var(--space-6);">PhenoTips runs as a SMART on FHIR app inside Epic and Oracle Health (Cerner) — and exchanges data with any HL7-FHIR–compliant system. No custom middleware. No re-implementation.</p>
           <div class="logo-grid" style="grid-template-columns:repeat(2,1fr);max-width:420px;margin-left:0;justify-items:start;">
-            <span class="brand-logo"><img src="assets/logos/epic.svg" alt="Epic"></span>
-            <span class="brand-logo"><img src="assets/logos/oracle-cerner.svg" alt="Oracle Health (Cerner)"></span>
-            <span class="brand-logo"><img src="assets/logos/smart-on-fhir.svg" alt="SMART on FHIR"></span>
-            <span class="brand-logo"><img src="assets/logos/hl7-fhir.svg" alt="HL7 FHIR"></span>
+            <span class="brand-logo"><img src="assets/logos/epic.svg" alt="Epic" width="90" height="36" loading="lazy" decoding="async"></span>
+            <span class="brand-logo"><img src="assets/logos/oracle-cerner.svg" alt="Oracle Health (Cerner)" width="160" height="36" loading="lazy" decoding="async"></span>
+            <span class="brand-logo"><img src="assets/logos/smart-on-fhir.svg" alt="SMART on FHIR" width="180" height="36" loading="lazy" decoding="async"></span>
+            <span class="brand-logo"><img src="assets/logos/hl7-fhir.svg" alt="HL7 FHIR" width="140" height="36" loading="lazy" decoding="async"></span>
           </div>
         </div>
         <div>
@@ -325,6 +327,60 @@
             <div class="compliance-chip"><i data-lucide="shield-check"></i>CE+</div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- FAQ -->
+  <section class="section section--sm" id="faq">
+    <div class="container container--narrow">
+      <div class="section-heading reveal" style="text-align:left;max-width:none;margin:0 0 var(--space-6);">
+        <span class="eyebrow">Frequently asked questions</span>
+        <h2>Common questions, <em>direct answers.</em></h2>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary class="faq-q">What is PhenoTips?</summary>
+          <div class="faq-a">
+            <p>PhenoTips is the unified genomics workflow solution — a clinical software platform used by 100+ institutions to capture phenotypes (using Human Phenotype Ontology), draw pedigrees, run hereditary cancer risk models, support variant interpretation, and embed in EHRs as a SMART on FHIR app.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Does PhenoTips integrate with Epic and Oracle Health (Cerner)?</summary>
+          <div class="faq-a">
+            <p>Yes. PhenoTips runs as a SMART on FHIR app inside both Epic and Oracle Health (Cerner). Patient context is handed in via single sign-on, structured records flow back to the EHR, and there&#x27;s no custom middleware required. PhenoTips also exchanges data with any HL7 FHIR–compliant system.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Is PhenoTips HIPAA, GDPR, and DSPT certified?</summary>
+          <div class="faq-a">
+            <p>Yes. PhenoTips holds HIPAA, GDPR, DSPT (UK NHS Data Security and Protection Toolkit), SOC 2, and CE+ certifications, allowing deployment across US, EU, UK, and Canadian healthcare jurisdictions.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Which cancer risk models does PhenoTips support?</summary>
+          <div class="faq-a">
+            <p>PhenoTips runs CanRisk (BOADICEA V2), Tyrer-Cuzick (IBIS), BRCAPRO, Gail Model, and PREMM5 from a single shared pedigree — eliminating the duplicate data entry that costs counselors approximately 30 minutes per assessment.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">What is HPO and why does PhenoTips use it?</summary>
+          <div class="faq-a">
+            <p>HPO is the Human Phenotype Ontology — a standardized vocabulary of over 17,000 clinical features used by genetics teams worldwide. PhenoTips was the first clinical tool to operationalize HPO; structured HPO terms make every phenotype searchable, comparable across institutions, and interpretable by computational diagnostic tools.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Can PhenoTips help with genetic test ordering?</summary>
+          <div class="faq-a">
+            <p>Yes. PhenoTips includes AI-assisted test recommendation through SmartRequisition, which uses the patient&#x27;s HPO phenotype profile, family history, and prior workup to suggest the most appropriate genomic test — reducing duplicate orders, retests, and time spent on test selection.</p>
+          </div>
+        </details>
       </div>
     </div>
   </section>
@@ -348,7 +404,7 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <img src="assets/logo-phenotips-full.png" alt="PhenoTips">
+          <img src="assets/logo-phenotips-full.png" alt="PhenoTips" width="200" height="32" decoding="async" fetchpriority="high">
           <p>The world's first Unified Genomics Workflow Solution. Founded 2011 at BC Children's Hospital.</p>
         </div>
         <div class="footer__links-grid">
@@ -395,5 +451,6 @@
   </footer>
 
   <script src="js/main.js?v=202604251245"></script>
+  <script src="js/migration-tracker.js" defer></script>
 </body>
 </html>

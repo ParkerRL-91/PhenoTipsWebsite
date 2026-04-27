@@ -36,6 +36,8 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Health Systems","url":"https://phenotips.com/solutions/health-systems","description":"A single solution that unites all genetics teams. PhenoTips connects EPRs, lab hubs, and clinical teams across multi-site networks.","provider":{"@type":"Organization","name":"PhenoTips","url":"https://phenotips.com"},"serviceType":"Clinical genomics software","areaServed":["United States","Canada","United Kingdom","European Union"]}</script>
   <!-- SEO: breadcrumb schema -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://phenotips.com/"},{"@type":"ListItem","position":2,"name":"Solutions","item":"https://phenotips.com/solutions"},{"@type":"ListItem","position":3,"name":"Health Systems","item":"https://phenotips.com/solutions/health-systems"}]}</script>
+  <!-- SEO: FAQPage schema -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can PhenoTips connect multiple sites across a health system?","acceptedAnswer":{"@type":"Answer","text":"Yes. PhenoTips is designed for multi-site deployment. Its FHIR-native architecture lets one PhenoTips deployment serve dozens of clinical sites, all sharing structured patient records, standardized HPO phenotyping, and cross-site cohort search \u2014 without requiring each site to adopt a new EHR."}},{"@type":"Question","name":"Does PhenoTips support HL7 FHIR?","acceptedAnswer":{"@type":"Answer","text":"Yes. PhenoTips is FHIR-native and runs as a SMART on FHIR app inside Epic and Oracle Health (Cerner). It also exchanges data with any HL7 FHIR\u2013compliant system, including laboratory information systems, regional registries, and population health platforms."}},{"@type":"Question","name":"Is PhenoTips DSPT certified for the NHS?","acceptedAnswer":{"@type":"Answer","text":"Yes. PhenoTips holds DSPT (Data Security and Protection Toolkit) certification, plus HIPAA, GDPR, SOC 2, and CE+. This allows deployment across NHS Trusts in the UK, US health systems, EU healthcare networks, and Canadian provincial health authorities."}},{"@type":"Question","name":"How does PhenoTips standardize phenotyping across multiple sites?","acceptedAnswer":{"@type":"Answer","text":"PhenoTips uses the Human Phenotype Ontology (HPO) \u2014 a standardized vocabulary of 17,000+ clinical terms \u2014 as the substrate for every phenotype description. Every site captures phenotypes using the same vocabulary, which makes cross-site search, outcome comparison, and clinical decision support possible at scale."}},{"@type":"Question","name":"How long does PhenoTips take to deploy at a health system?","acceptedAnswer":{"@type":"Answer","text":"Implementation timelines depend on scope, but with the SMART on FHIR pre-built integrations for Epic and Oracle Health, full deployment is typically measured in weeks rather than months. Smaller programs can use PhenoTips' Clinical Cloud \u2014 a hosted, lightweight version \u2014 and be live in days."}}]}</script>
 </head>
 <body>
 
@@ -43,7 +45,7 @@
   <nav class="nav" role="navigation">
     <div class="nav__inner">
       <a href="../index.html" class="nav__logo">
-        <img src="../assets/logo-phenotips-full.png" alt="PhenoTips">
+        <img src="../assets/logo-phenotips-full.png" alt="PhenoTips" width="200" height="32" decoding="async">
       </a>
       <ul class="nav__links" role="list">
         <li>
@@ -192,7 +194,7 @@
         <div class="outcome-block__content">
           <span class="eyebrow">SMART on FHIR · Native EHR</span>
           <h3>Embedded directly in your EHR.</h3>
-          <p>PhenoTips runs as a SMART on FHIR app inside Epic and Oracle Health (Cerner) — single sign-on, patient context handed in automatically, structured records returned to the EHR. The same FHIR-native interoperability extends to laboratory information systems and any standards-compliant external service.</p>
+          <p>PhenoTips runs as a SMART on FHIR app inside Epic and Oracle Health (Cerner) — single sign-on, patient context handed in automatically, structured records returned to the EHR. See the <a href="../platform.html">full platform feature list</a>. The same FHIR-native interoperability extends to laboratory information systems and any standards-compliant external service.</p>
           <div class="outcome-block__accomplishes">
             <i data-lucide="check-circle" style="width:14px;height:14px;"></i>
             Connect EPRs, lab hubs, and clinical teams across every site
@@ -224,10 +226,10 @@
               </div>
             </div>
             <div style="margin-top:var(--space-4);padding-top:var(--space-4);border-top:1px solid var(--border-1);display:flex;gap:var(--space-3);align-items:center;flex-wrap:wrap;">
-              <span class="brand-logo" style="height:24px;"><img src="../assets/logos/epic.svg" alt="Epic"></span>
-              <span class="brand-logo" style="height:24px;"><img src="../assets/logos/oracle-cerner.svg" alt="Oracle Health"></span>
-              <span class="brand-logo" style="height:24px;"><img src="../assets/logos/smart-on-fhir.svg" alt="SMART on FHIR"></span>
-              <span class="brand-logo" style="height:24px;"><img src="../assets/logos/hl7-fhir.svg" alt="HL7 FHIR"></span>
+              <span class="brand-logo" style="height:24px;"><img src="../assets/logos/epic.svg" alt="Epic" width="90" height="36" loading="lazy" decoding="async"></span>
+              <span class="brand-logo" style="height:24px;"><img src="../assets/logos/oracle-cerner.svg" alt="Oracle Health" width="160" height="36" loading="lazy" decoding="async"></span>
+              <span class="brand-logo" style="height:24px;"><img src="../assets/logos/smart-on-fhir.svg" alt="SMART on FHIR" width="180" height="36" loading="lazy" decoding="async"></span>
+              <span class="brand-logo" style="height:24px;"><img src="../assets/logos/hl7-fhir.svg" alt="HL7 FHIR" width="140" height="36" loading="lazy" decoding="async"></span>
             </div>
           </div>
         </div>
@@ -261,7 +263,7 @@
         <div class="outcome-block__content">
           <span class="eyebrow">Test Requisition</span>
           <h3>Streamline test ordering.</h3>
-          <p>Digital, standardized pedigrees and HPO-coded phenotypes mean labs always receive the right clinical data the first time — no missing fields, no follow-up calls, no rejected requisitions. PhenoTips generates and routes test orders directly from the clinical record and tracks them from submission through to result return.</p>
+          <p>Digital, standardized pedigrees and HPO-coded phenotypes mean labs always receive the right clinical data the first time — see how <a href="rare-disease.html">rare disease programs</a> and <a href="cancer-genetics.html">cancer genetics clinics</a> use this — no missing fields, no follow-up calls, no rejected requisitions. PhenoTips generates and routes test orders directly from the clinical record and tracks them from submission through to result return.</p>
           <div class="outcome-block__accomplishes">
             <i data-lucide="check-circle" style="width:14px;height:14px;"></i>
             Right data on every requisition, the first time
@@ -377,6 +379,53 @@
     </div>
   </section>
 
+    <!-- FAQ -->
+  <section class="section section--sm" id="faq">
+    <div class="container container--narrow">
+      <div class="section-heading reveal" style="text-align:left;max-width:none;margin:0 0 var(--space-6);">
+        <span class="eyebrow">Frequently asked questions</span>
+        <h2>Common questions, <em>direct answers.</em></h2>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary class="faq-q">Can PhenoTips connect multiple sites across a health system?</summary>
+          <div class="faq-a">
+            <p>Yes. PhenoTips is designed for multi-site deployment. Its FHIR-native architecture lets one PhenoTips deployment serve dozens of clinical sites, all sharing structured patient records, standardized HPO phenotyping, and cross-site cohort search — without requiring each site to adopt a new EHR.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Does PhenoTips support HL7 FHIR?</summary>
+          <div class="faq-a">
+            <p>Yes. PhenoTips is FHIR-native and runs as a SMART on FHIR app inside Epic and Oracle Health (Cerner). It also exchanges data with any HL7 FHIR–compliant system, including laboratory information systems, regional registries, and population health platforms.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Is PhenoTips DSPT certified for the NHS?</summary>
+          <div class="faq-a">
+            <p>Yes. PhenoTips holds DSPT (Data Security and Protection Toolkit) certification, plus HIPAA, GDPR, SOC 2, and CE+. This allows deployment across NHS Trusts in the UK, US health systems, EU healthcare networks, and Canadian provincial health authorities.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">How does PhenoTips standardize phenotyping across multiple sites?</summary>
+          <div class="faq-a">
+            <p>PhenoTips uses the Human Phenotype Ontology (HPO) — a standardized vocabulary of 17,000+ clinical terms — as the substrate for every phenotype description. Every site captures phenotypes using the same vocabulary, which makes cross-site search, outcome comparison, and clinical decision support possible at scale.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">How long does PhenoTips take to deploy at a health system?</summary>
+          <div class="faq-a">
+            <p>Implementation timelines depend on scope, but with the SMART on FHIR pre-built integrations for Epic and Oracle Health, full deployment is typically measured in weeks rather than months. Smaller programs can use PhenoTips&#x27; Clinical Cloud — a hosted, lightweight version — and be live in days.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta-section">
     <div class="container">
@@ -396,7 +445,7 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <img src="../assets/logo-phenotips-full.png" alt="PhenoTips">
+          <img src="../assets/logo-phenotips-full.png" alt="PhenoTips" width="200" height="32" decoding="async" fetchpriority="high">
           <p>The world's first Unified Genomics Workflow Solution. Founded 2011 at BC Children's Hospital.</p>
         </div>
         <div class="footer__links-grid">
@@ -443,5 +492,6 @@
   </footer>
 
   <script src="../js/main.js?v=202604251245"></script>
+  <script src="../js/migration-tracker.js" defer></script>
 </body>
 </html>

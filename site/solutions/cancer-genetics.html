@@ -36,6 +36,8 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Cancer Genetics","url":"https://phenotips.com/solutions/cancer-genetics","description":"Automated patient intake. Integrated cancer risk assessment. PhenoTips consolidates pedigrees, all major risk models, and EHR documentation.","provider":{"@type":"Organization","name":"PhenoTips","url":"https://phenotips.com"},"serviceType":"Clinical genomics software","areaServed":["United States","Canada","United Kingdom","European Union"]}</script>
   <!-- SEO: breadcrumb schema -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://phenotips.com/"},{"@type":"ListItem","position":2,"name":"Solutions","item":"https://phenotips.com/solutions"},{"@type":"ListItem","position":3,"name":"Cancer Genetics","item":"https://phenotips.com/solutions/cancer-genetics"}]}</script>
+  <!-- SEO: FAQPage schema -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which cancer risk models does PhenoTips run?","acceptedAnswer":{"@type":"Answer","text":"PhenoTips runs five major hereditary cancer risk models from one shared pedigree: CanRisk (BOADICEA V2), Tyrer-Cuzick (IBIS), BRCAPRO, Gail Model, and PREMM5 (Lynch). All five execute simultaneously when a counselor completes the family history."}},{"@type":"Question","name":"How does PhenoTips save 30 minutes per cancer risk assessment?","acceptedAnswer":{"@type":"Answer","text":"Genetic counselors typically re-enter the same family history into CanRisk, IBIS, BRCAPRO, etc. \u2014 three or more separate tools. PhenoTips consolidates this into a single pedigree that feeds all five models at once. Add in elimination of EHR re-entry and the time savings is approximately 30 minutes per patient."}},{"@type":"Question","name":"Can patients fill in family history before their visit?","acceptedAnswer":{"@type":"Answer","text":"Yes. PhenoTips' Pre-Visit Patient Questionnaire (PPQ) sends a digital intake form to patients before the appointment. Their responses are auto-translated into a pedigree, so when the counselor opens the chart, the family history is already drawn \u2014 saving up to 50% of first-encounter time."}},{"@type":"Question","name":"Does PhenoTips integrate with EHRs for cancer genetics workflow?","acceptedAnswer":{"@type":"Answer","text":"Yes. PhenoTips runs as a SMART on FHIR app inside Epic and Oracle Health (Cerner). Patient demographics and history flow in from the EHR; completed pedigrees, risk scores, and clinical reports flow back. There's no duplicate documentation."}},{"@type":"Question","name":"Is PhenoTips used by NHS cancer genetics programs?","acceptedAnswer":{"@type":"Answer","text":"Yes. Cambridge University Hospitals NHS Foundation Trust (Addenbrooke's), Great Ormond Street Hospital NHS Trust, and London North West University Healthcare NHS Trust all use PhenoTips. PhenoTips holds DSPT certification for NHS deployments."}}]}</script>
 </head>
 <body>
 
@@ -43,7 +45,7 @@
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="../index.html" class="nav__logo">
-        <img src="../assets/logo-phenotips-full.png" alt="PhenoTips">
+        <img src="../assets/logo-phenotips-full.png" alt="PhenoTips" width="200" height="32" decoding="async">
       </a>
       <ul class="nav__links" role="list">
         <li>
@@ -201,7 +203,7 @@
         <div class="outcome-block__content">
           <span class="eyebrow">Cancer Risk Assessment</span>
           <h3>CanRisk, Gail, Tyrer-Cuzick, PREMM5, IBIS — in a single click.</h3>
-          <p>All major hereditary cancer risk models run simultaneously from one shared pedigree. No switching tools. No re-entering the same family history five times. Results display side-by-side for comparison and clinical decision-making.</p>
+          <p>All major hereditary cancer risk models run simultaneously from one shared pedigree. <a href="../roi-calculator.html">Calculate the time and cost savings for your program.</a> No switching tools. No re-entering the same family history five times. Results display side-by-side for comparison and clinical decision-making.</p>
           <div class="outcome-block__accomplishes">
             <i data-lucide="check-circle" style="width:14px;height:14px;"></i>
             Save approximately 30 minutes per risk assessment
@@ -242,10 +244,10 @@
           <div style="background:var(--bg-1);border-radius:var(--radius-md);border:1px solid var(--border-1);box-shadow:var(--shadow-md);padding:var(--space-5);width:100%;text-align:center;">
             <p style="font-size:11px;color:var(--fg-4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Certified integrations</p>
             <div class="logo-grid" style="grid-template-columns:repeat(2,1fr);gap:var(--space-4);">
-              <span class="brand-logo"><img src="../assets/logos/epic.svg" alt="Epic"></span>
-              <span class="brand-logo"><img src="../assets/logos/oracle-cerner.svg" alt="Oracle Health"></span>
-              <span class="brand-logo"><img src="../assets/logos/smart-on-fhir.svg" alt="SMART on FHIR"></span>
-              <span class="brand-logo"><img src="../assets/logos/hl7-fhir.svg" alt="HL7 FHIR"></span>
+              <span class="brand-logo"><img src="../assets/logos/epic.svg" alt="Epic" width="90" height="36" loading="lazy" decoding="async"></span>
+              <span class="brand-logo"><img src="../assets/logos/oracle-cerner.svg" alt="Oracle Health" width="160" height="36" loading="lazy" decoding="async"></span>
+              <span class="brand-logo"><img src="../assets/logos/smart-on-fhir.svg" alt="SMART on FHIR" width="180" height="36" loading="lazy" decoding="async"></span>
+              <span class="brand-logo"><img src="../assets/logos/hl7-fhir.svg" alt="HL7 FHIR" width="140" height="36" loading="lazy" decoding="async"></span>
             </div>
           </div>
         </div>
@@ -314,7 +316,7 @@
           <p class="testimonial__quote">With PhenoTips I've never had any problems — it just works.</p>
           <div class="testimonial__attribution">
             Prof. Marc Tischkowitz
-            <span>Medical Genetics · Cambridge University Hospitals NHS Trust</span>
+            <span>Medical Genetics · <a href="../case-studies/addenbrooke.html">Cambridge University Hospitals NHS Trust</a></span>
           </div>
         </div>
       </div>
@@ -324,6 +326,53 @@
           <strong style="font-size:var(--fs-2xl);color:var(--pheno-600);">95%+</strong>
           <span style="font-size:var(--fs-sm);color:var(--fg-2);">of users prefer PhenoTips for pedigree drawing</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- FAQ -->
+  <section class="section section--sm" id="faq">
+    <div class="container container--narrow">
+      <div class="section-heading reveal" style="text-align:left;max-width:none;margin:0 0 var(--space-6);">
+        <span class="eyebrow">Frequently asked questions</span>
+        <h2>Common questions, <em>direct answers.</em></h2>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary class="faq-q">Which cancer risk models does PhenoTips run?</summary>
+          <div class="faq-a">
+            <p>PhenoTips runs five major hereditary cancer risk models from one shared pedigree: CanRisk (BOADICEA V2), Tyrer-Cuzick (IBIS), BRCAPRO, Gail Model, and PREMM5 (Lynch). All five execute simultaneously when a counselor completes the family history.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">How does PhenoTips save 30 minutes per cancer risk assessment?</summary>
+          <div class="faq-a">
+            <p>Genetic counselors typically re-enter the same family history into CanRisk, IBIS, BRCAPRO, etc. — three or more separate tools. PhenoTips consolidates this into a single pedigree that feeds all five models at once. Add in elimination of EHR re-entry and the time savings is approximately 30 minutes per patient.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Can patients fill in family history before their visit?</summary>
+          <div class="faq-a">
+            <p>Yes. PhenoTips&#x27; Pre-Visit Patient Questionnaire (PPQ) sends a digital intake form to patients before the appointment. Their responses are auto-translated into a pedigree, so when the counselor opens the chart, the family history is already drawn — saving up to 50% of first-encounter time.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Does PhenoTips integrate with EHRs for cancer genetics workflow?</summary>
+          <div class="faq-a">
+            <p>Yes. PhenoTips runs as a SMART on FHIR app inside Epic and Oracle Health (Cerner). Patient demographics and history flow in from the EHR; completed pedigrees, risk scores, and clinical reports flow back. There&#x27;s no duplicate documentation.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Is PhenoTips used by NHS cancer genetics programs?</summary>
+          <div class="faq-a">
+            <p>Yes. Cambridge University Hospitals NHS Foundation Trust (Addenbrooke&#x27;s), Great Ormond Street Hospital NHS Trust, and London North West University Healthcare NHS Trust all use PhenoTips. PhenoTips holds DSPT certification for NHS deployments.</p>
+          </div>
+        </details>
       </div>
     </div>
   </section>
@@ -347,7 +396,7 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <img src="../assets/logo-phenotips-full.png" alt="PhenoTips">
+          <img src="../assets/logo-phenotips-full.png" alt="PhenoTips" width="200" height="32" decoding="async" fetchpriority="high">
           <p>The world's first Unified Genomics Workflow Solution. Founded 2011 at BC Children's Hospital.</p>
         </div>
         <div class="footer__links-grid">
@@ -394,5 +443,6 @@
   </footer>
 
   <script src="../js/main.js?v=202604251245"></script>
+  <script src="../js/migration-tracker.js" defer></script>
 </body>
 </html>

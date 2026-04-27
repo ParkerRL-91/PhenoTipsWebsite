@@ -71,3 +71,4 @@ Allow: /
 
 # Sitemap
 Sitemap: https://phenotips.com/sitemap.xml
+Sitemap: https://phenotips.com/sitemap-images.xml

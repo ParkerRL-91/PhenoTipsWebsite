@@ -15,7 +15,7 @@
   <!-- NAV -->
   <nav class="nav" role="navigation">
     <div class="nav__inner">
-      <a href="/" class="nav__logo"><img src="/assets/logo-phenotips-full.png" alt="PhenoTips"></a>
+      <a href="/" class="nav__logo"><img src="/assets/logo-phenotips-full.png" alt="PhenoTips" width="200" height="32" decoding="async"></a>
       <ul class="nav__links" role="list">
         <li><a href="/solutions/rare-disease.html" class="nav__link" aria-haspopup="true">Solutions <i data-lucide="chevron-down" style="width:14px;height:14px;"></i></a>
           <ul class="nav__dropdown" role="list">
@@ -105,7 +105,7 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <img src="/assets/logo-phenotips-full.png" alt="PhenoTips">
+          <img src="/assets/logo-phenotips-full.png" alt="PhenoTips" width="200" height="32" decoding="async" fetchpriority="high">
           <p>The Unified Genomics Workflow Solution. Founded in 2012 at the University of Toronto and SickKids.</p>
         </div>
         <div class="footer__links-grid">
@@ -141,19 +141,21 @@
   </footer>
 
   <script>
-    // Migration tracker — log 404s to the console + send to a beacon if configured.
-    // Helps spot legacy URLs that need a redirect added.
+    // 404 tracker — log to console + send to the Netlify Function so we
+    // can spot legacy URLs that still need a redirect added.
     (function() {
       try {
         var info = {
-          path: window.location.pathname + window.location.search,
-          referrer: document.referrer || "(direct)",
+          type:      "404-hit",
+          path:      window.location.pathname + window.location.search,
+          referrer:  document.referrer || "(direct)",
           userAgent: navigator.userAgent,
-          time: new Date().toISOString(),
+          time:      new Date().toISOString(),
         };
         console.warn("[PhenoTips 404]", info);
-        // Optional beacon — wire to a real endpoint when ready
-        // navigator.sendBeacon('/api/log-404', JSON.stringify(info));
+        var beaconUrl = window.MIGRATION_BEACON_URL || "/.netlify/functions/log-404";
+        var blob = new Blob([JSON.stringify(info)], { type: "application/json" });
+        navigator.sendBeacon(beaconUrl, blob);
       } catch (_) {}
     })();
     if (window.lucide) lucide.createIcons();

@@ -2521,6 +2521,75 @@ img.team-avatar { padding: 0; }
 }
 
 /* ============================================================
+   FAQ — accordion (uses native <details>/<summary>)
+   ============================================================ */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.faq-item {
+  background: var(--bg-1);
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  transition: border-color var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+}
+
+.faq-item[open] {
+  border-color: var(--pheno-200);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-q {
+  list-style: none;
+  cursor: pointer;
+  padding: var(--space-5) var(--space-6);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--pheno-800);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.faq-q::-webkit-details-marker { display: none; }
+
+.faq-q::after {
+  content: "+";
+  font-family: var(--font-sans);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-light);
+  color: var(--pheno-400);
+  line-height: 1;
+  transition: transform var(--dur-base) var(--ease-out), color var(--dur-base) var(--ease-out);
+}
+
+.faq-item[open] .faq-q::after {
+  content: "−";
+  color: var(--pheno-600);
+}
+
+.faq-q:hover { color: var(--pheno-600); }
+.faq-q:focus-visible { outline: 2px solid var(--pheno-400); outline-offset: 2px; border-radius: var(--radius-md); }
+
+.faq-a {
+  padding: 0 var(--space-6) var(--space-5);
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-2);
+  border-top: 1px solid var(--border-1);
+}
+
+.faq-a p {
+  margin: var(--space-4) 0 0;
+}
+
+/* ============================================================
    PRESS PAGE — refreshed design
    ============================================================ */
 

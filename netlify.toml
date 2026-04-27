@@ -1,5 +1,6 @@
 [build]
-  publish = "site"
+  publish   = "site"
+  functions = "netlify/functions"
 
 # Pretty URLs — let visitors hit /platform instead of /platform.html
 [[redirects]]
