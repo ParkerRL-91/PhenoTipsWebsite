@@ -1,0 +1,60 @@
+# PhenoTips
+
+> The Unified Genomics Workflow Solution. PhenoTips gives genetics teams one EHR-integrated platform to capture phenotypes, draw pedigrees, run every cancer risk model, assist with genomic test ordering, and reach diagnostic answers — faster.
+
+## About PhenoTips
+
+PhenoTips is a clinical genomics platform used at 100+ institutions worldwide, including SickKids (Toronto), Children's Mercy (Kansas City), CHU Sainte-Justine (Montreal), BC Children's Hospital, Cambridge University Hospitals NHS Trust, and Great Ormond Street Hospital NHS Trust. The company was founded in 2012 as a research collaboration between the University of Toronto and SickKids Hospital — and was the first clinical tool to operationalize the Human Phenotype Ontology (HPO).
+
+The platform integrates with Epic and Oracle Health (Cerner) as a SMART on FHIR app, and is HIPAA, GDPR, DSPT, SOC2, and CE+ compliant.
+
+## Key outcomes
+
+- 3× faster to a differential diagnosis (vs. unstructured workflows; published outcomes data)
+- 50% efficiency gain on first-patient encounters (with pre-visit questionnaire)
+- 30 minutes saved per cancer risk assessment (running CanRisk, Tyrer-Cuzick, BRCAPRO, Gail, PREMM5 from one shared pedigree)
+- Right data on every genetic test requisition the first time (digital, standardized pedigrees)
+
+## Product capabilities
+
+- HPO-based phenotype capture (concept recognition from clinical notes)
+- Auto-drawn pedigrees (from pre-visit patient questionnaire)
+- Hereditary cancer risk assessment (5 models from one pedigree)
+- Variant analysis with phenotype context
+- AI-assisted genomic test recommendation (SmartRequisition / CIPHER network)
+- Clinical report generation
+- EHR integration (Epic, Oracle Health/Cerner) via SMART on FHIR
+- Multi-site network rollout for health systems
+
+## Solutions
+
+- [Rare Disease](https://phenotips.com/solutions/rare-disease): Reach the right diagnosis 3× faster.
+- [Cancer Genetics](https://phenotips.com/solutions/cancer-genetics): Automated intake. Integrated risk assessment.
+- [Health Systems](https://phenotips.com/solutions/health-systems): A single solution that unites all genetics teams.
+
+## Recent news
+
+- [National AI Initiative for Genomic Medicine (CIPHER / SmartRequisition)](https://phenotips.com/news/gapp-announcement) — April 7, 2026. $5.4M Genome Canada GAPP-funded initiative led by PhenoTips and IWK Health, with five Canadian health institutions.
+
+## Case studies
+
+- [Cambridge — Addenbrooke's Hospital](https://phenotips.com/case-studies/addenbrooke): How Addenbrooke's Hospital modernized its medical genetics department with PhenoTips.
+
+## Resources
+
+- [Speaker Series (webinars)](https://phenotips.com/webinars) — 30+ episodes on clinical genetics and genomic medicine.
+- [Publications](https://phenotips.com/publications) — Peer-reviewed papers and case studies.
+- [Press](https://phenotips.com/press) — Press coverage and announcements.
+
+## Contact
+
+- [Book a Demo](https://phenotips.com/contact) — Tailored discovery call + walkthrough + ROI.
+- Web: https://phenotips.com
+- LinkedIn: https://www.linkedin.com/company/phenotips/
+- YouTube: https://www.youtube.com/@phenotips
+
+## Optional
+
+- [Sitemap (XML)](https://phenotips.com/sitemap.xml)
+- [Privacy Policy](https://phenotips.com/privacy-policy)
+- [Terms of Use](https://phenotips.com/terms-of-use)
