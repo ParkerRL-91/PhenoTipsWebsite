@@ -6,6 +6,18 @@ Allow: /
 Disallow: /assets/team/   # block bulk team-photo scraping; pages still index
 Disallow: /uploads/       # ignore any leftover Claude Design artifacts
 
+# Legacy WordPress plugin URLs — no SEO value, prevent crawl-budget waste
+Disallow: /elementskit-content/
+Disallow: /*?elementskit_template=
+Disallow: /*?elementskit_widget=
+Disallow: /*?mas_static_content=
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/
+Disallow: /xmlrpc.php
+Disallow: /?elementor-preview=
+Disallow: /*?p=             # WordPress preview / draft URLs
+
 # Explicitly allow major AI crawlers — supports AEO (Answer Engine Optimization).
 # These bots feed content to ChatGPT, Claude, Perplexity, Google AI Overviews, etc.
 

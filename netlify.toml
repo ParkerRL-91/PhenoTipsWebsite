@@ -52,6 +52,241 @@
   to = "/solutions/health-systems.html"
   status = 200
 
+[[redirects]]
+  from = "/press"
+  to = "/press.html"
+  status = 200
+
+# Pretty URLs for new legal stubs
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/privacy-policy.html"
+  status = 200
+
+[[redirects]]
+  from = "/cloud-terms"
+  to = "/cloud-terms.html"
+  status = 200
+
+[[redirects]]
+  from = "/cloud-privacy"
+  to = "/cloud-privacy.html"
+  status = 200
+
+# ============================================================
+# 301 MIGRATION REDIRECTS — legacy WordPress URLs → new static site
+# Generated from phenotips.com sitemap_index.xml on 2026-04-27.
+# Re-generate via: python3 tools/build_redirects.py
+# ============================================================
+
+# ---- About / Company ----
+[[redirects]]
+  from = "/our-story/"
+  to = "/about.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/team/"
+  to = "/team.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact/"
+  to = "/contact.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/book-a-demo/"
+  to = "/contact.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pricing/"
+  to = "/contact.html"
+  status = 301
+  force = true
+
+# ---- Solutions ----
+[[redirects]]
+  from = "/rare-disease/"
+  to = "/solutions/rare-disease.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cancer-genetics/"
+  to = "/solutions/cancer-genetics.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/health-systems/"
+  to = "/solutions/health-systems.html"
+  status = 301
+  force = true
+
+# ---- Old feature pages → consolidated /platform ----
+[[redirects]]
+  from = "/phenotips-pedigree-maker-tool/"
+  to = "/platform.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/core-genomic-health-record/"
+  to = "/platform.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cancer-risk-assessment/"
+  to = "/platform.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/patient-questionnaire/"
+  to = "/platform.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/structured-patient-data-and-clinical-insights/"
+  to = "/platform.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/seamless-integrations/"
+  to = "/platform.html"
+  status = 301
+  force = true
+
+# ---- Resources hubs ----
+[[redirects]]
+  from = "/papers/"
+  to = "/publications.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/"
+  to = "/webinars.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/speaker-series/"
+  to = "/webinars.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/casestudies/"
+  to = "/publications.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/press/"
+  to = "/press.html"
+  status = 301
+  force = true
+
+# ---- Specific high-value redirects ----
+[[redirects]]
+  from = "/press/smartrequisition/"
+  to = "/news/gapp-announcement.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/casestudies/case-study-addenbrookes/"
+  to = "/case-studies/addenbrooke.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/case-studies/addenbrooke-case-study/"
+  to = "/case-studies/addenbrooke.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/casestudies/case-study-cmh/"
+  to = "/publications.html"
+  status = 301
+  force = true
+
+# ---- WordPress category pages ----
+[[redirects]]
+  from = "/category/blog/"
+  to = "/webinars.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/category/speaker-series/"
+  to = "/webinars.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/category/case-studies/"
+  to = "/publications.html"
+  status = 301
+  force = true
+
+# ---- Form thank-you pages → home ----
+[[redirects]]
+  from = "/nps-thank-you/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/demo-thank-you/"
+  to = "/"
+  status = 301
+  force = true
+
+# ---- Pattern catch-alls (handle the 70+ blog posts and speaker-series episodes) ----
+# Note: specific routes above are matched first.
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/webinars.html"
+  status = 302       # 302 for now — change to 301 when we add a real blog
+  force = true
+
+[[redirects]]
+  from = "/speaker-series/*"
+  to = "/webinars.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/press/*"
+  to = "/press.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/casestudies/*"
+  to = "/publications.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/case-studies/*"
+  to = "/publications.html"
+  status = 301
+  force = true
+
 # Cache headers — long cache for assets, no-cache for HTML
 [[headers]]
   for = "/assets/*"
