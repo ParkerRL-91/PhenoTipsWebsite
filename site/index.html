@@ -9,8 +9,13 @@
   <meta property="og:description" content="Shorten the diagnostic odyssey. One end-to-end genomics platform for rare disease, cancer genetics, and health systems.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/design-tokens.css?v=202604251245">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
   <link rel="stylesheet" href="css/site.css?v=202604251245">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
   <link rel="canonical" href="https://phenotips.com/">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
   <meta property="og:url" content="https://phenotips.com/">
@@ -101,6 +106,7 @@
     </nav>
   </nav>
 
+  <main role="main">
   <!-- HERO — split layout, outcomes above the fold -->
   <section class="hero">
     <div class="container">
@@ -307,7 +313,7 @@
                 <span class="ds-hpo">HP:0000252</span>
               </div>
               <div style="background:var(--bg-2);border-radius:8px;padding:16px;font-size:13px;color:var(--fg-3);text-align:center;min-height:120px;display:flex;align-items:center;justify-content:center;">
-                <span style="color:var(--pheno-300);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Pedigree diagram preview</span>
+                <span style="color:var(--pheno-500);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;">Pedigree diagram preview</span>
               </div>
             </div>
           </div>
@@ -474,6 +480,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">

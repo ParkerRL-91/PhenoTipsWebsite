@@ -6,7 +6,9 @@
    modernizes the palette into a clinical-minimal system.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+/* IBM Plex fonts are loaded via <link> tags in the HTML <head> with
+   preconnect hints, so this file does not @import them — that pattern
+   blocks paint until the @import resolves. */
 
 :root {
   /* ----------------------------------------------------------
